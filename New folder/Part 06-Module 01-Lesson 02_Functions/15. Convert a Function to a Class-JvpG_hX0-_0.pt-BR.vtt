@@ -1,0 +1,98 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:03.700
+Vamos primeiro converter
+esta função em classe.
+
+00:00:06.733 --> 00:00:08.400
+Tudo dentro desta função
+
+00:00:08.433 --> 00:00:12.333
+está agora dentro de um método
+com o nome "constructor".
+
+00:00:13.433 --> 00:00:17.367
+Este método rodará automaticamente
+quando um novo objeto for construído
+
+00:00:17.400 --> 00:00:18.900
+a partir dessa classe.
+
+00:00:18.933 --> 00:00:21.100
+Se precisar de dados
+para criar o objeto,
+
+00:00:21.133 --> 00:00:22.800
+eles precisam
+ser incluídos aqui.
+
+00:00:24.667 --> 00:00:27.233
+Isto cria um objeto.
+
+00:00:27.267 --> 00:00:29.300
+Os métodos
+que os objetos herdam
+
+00:00:29.333 --> 00:00:31.733
+ficam dentro da classe.
+
+00:00:33.300 --> 00:00:36.700
+O "startEngines" existe
+no protótipo explicitamente,
+
+00:00:36.733 --> 00:00:38.867
+na forma pré-classe.
+
+00:00:38.900 --> 00:00:40.800
+Agora ele aparece
+dentro da classe,
+
+00:00:40.833 --> 00:00:43.200
+mas a funcionalidade
+é exatamente a mesma.
+
+00:00:43.267 --> 00:00:46.567
+Parece que "startEngines"
+e o método "constructor"
+
+00:00:46.600 --> 00:00:48.400
+são o mesmo tipo de método,
+
+00:00:48.433 --> 00:00:51.133
+mas o "constructor"
+não está no protótipo.
+
+00:00:51.167 --> 00:00:54.067
+É um método novo e especial
+que existe numa classe
+
+00:00:54.100 --> 00:00:56.700
+e é usado para inicializar
+novos objetos.
+
+00:00:56.733 --> 00:01:00.933
+Na realidade, a funcionalidade
+dos dois é a mesma.
+
+00:01:00.967 --> 00:01:04.400
+Essa sintaxe de classes é uma
+forma melhorada de escrever isto.
+
+00:01:04.967 --> 00:01:07.633
+Na verdade, criamos novos objetos
+da mesma forma
+
+00:01:07.667 --> 00:01:09.633
+com essa nova
+sintaxe de classes.
+
+00:01:11.200 --> 00:01:13.467
+Se você já entende
+protótipos e heranças,
+
+00:01:13.500 --> 00:01:17.733
+então entenderá bem como classes
+e métodos de classes funcionam.
+

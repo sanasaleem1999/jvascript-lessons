@@ -1,0 +1,56 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:03.103
+Arrow functions são incríveis
+e deixam seu código mais limpo
+
+00:00:03.136 --> 00:00:06.740
+ao remover coisas desnecessárias,
+como a palavra-chave "function",
+
+00:00:06.773 --> 00:00:09.176
+a palavra-chave "return"
+e as chaves.
+
+00:00:09.209 --> 00:00:10.511
+Tira essas coisas daqui.
+
+00:00:10.544 --> 00:00:12.479
+É, quem precisa delas?
+
+00:00:12.513 --> 00:00:16.416
+Mas não saia convertendo
+todas as funções em arrow functions,
+
+00:00:16.450 --> 00:00:18.785
+porque tem uma pegadinha
+nesse tipo de função.
+
+00:00:18.819 --> 00:00:21.154
+Arrow functions lidam
+com a palavra-chave "this"
+
+00:00:21.188 --> 00:00:23.056
+de forma diferente
+das funções normais.
+
+00:00:23.090 --> 00:00:26.460
+É, acho que isso é meio importante
+de se saber.
+
+00:00:26.493 --> 00:00:28.529
+Um pouco mais
+do que "meio" importante.
+
+00:00:28.562 --> 00:00:31.131
+Na verdade, a próxima sessão
+é toda sobre arrow functions
+
+00:00:31.164 --> 00:00:32.766
+e a palavra-chave "this".
+
+00:00:32.799 --> 00:00:33.800
+Vá lá ver.
+

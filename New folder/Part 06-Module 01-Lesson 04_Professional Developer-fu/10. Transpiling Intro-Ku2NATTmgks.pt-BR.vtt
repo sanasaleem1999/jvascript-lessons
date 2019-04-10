@@ -1,0 +1,96 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:03.537
+Você provavelmente já ouviu
+o termo "compilador".
+
+00:00:03.570 --> 00:00:05.906
+Um compilador pega
+um programa escrito
+
+00:00:05.939 --> 00:00:07.574
+numa linguagem de código-fonte,
+
+00:00:07.608 --> 00:00:09.176
+digamos C++,
+
+00:00:09.209 --> 00:00:12.913
+e converte para outra linguagem,
+como código de máquina.
+
+00:00:12.946 --> 00:00:14.481
+Passar um código
+pelo compilador
+
+00:00:14.515 --> 00:00:16.650
+muda o nível
+de abstração dele.
+
+00:00:16.683 --> 00:00:20.320
+Ele aproxima um código lido
+por humanos a um lido por máquinas.
+
+00:00:20.354 --> 00:00:22.489
+Isto é compilar:
+pegar uma linguagem fonte
+
+00:00:22.523 --> 00:00:24.791
+e convertê-la a uma
+de nível mais baixo.
+
+00:00:24.825 --> 00:00:27.427
+Transpilar é um subconjunto
+da compilação.
+
+00:00:27.461 --> 00:00:30.664
+O código fonte é convertido
+em código-alvo.
+
+00:00:30.697 --> 00:00:31.798
+É como o compilador,
+
+00:00:31.832 --> 00:00:35.869
+mas o código-fonte e código-alvo
+são do mesmo nível de abstração.
+
+00:00:35.903 --> 00:00:39.106
+Se o código-fonte
+for lido por humanos,
+
+00:00:39.139 --> 00:00:42.142
+a linguagem de saída
+também será lida por humanos.
+
+00:00:42.176 --> 00:00:43.877
+Mas por que iríamos
+querer isso?
+
+00:00:43.911 --> 00:00:48.415
+Vimos que navegadores antigos
+não têm suporte total ao ES6,
+
+00:00:48.448 --> 00:00:50.517
+mas que suportam código ES5.
+
+00:00:50.551 --> 00:00:52.553
+Assim podemos escrever
+o JavaScript
+
+00:00:52.586 --> 00:00:55.022
+usando a sintaxe
+e as funcionalidades do ES6
+
+00:00:55.055 --> 00:00:59.059
+e depois usar um transpilador
+para convertê-lo de ES6 para ES5.
+
+00:00:59.693 --> 00:01:02.296
+Programamos usando
+o que há de melhor e mais novo
+
+00:01:02.329 --> 00:01:04.231
+e convertemos
+para rodar em toda parte.
+

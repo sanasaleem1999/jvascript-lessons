@@ -1,0 +1,110 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.367 --> 00:00:03.704
+Classes no JavaScript.
+O que você pensa sobre elas?
+
+00:00:03.737 --> 00:00:05.172
+Acho ótimas. Quer dizer,
+
+00:00:05.205 --> 00:00:08.008
+são confusas se comparadas
+a classes em outras linguagens,
+
+00:00:08.041 --> 00:00:10.878
+mas o conceito geral
+é o mesmo.
+
+00:00:10.911 --> 00:00:12.212
+Quer falar mais sobre isso?
+
+00:00:12.246 --> 00:00:14.882
+Em outras linguagens,
+usamos classes
+
+00:00:14.915 --> 00:00:17.985
+para criar objetos
+e fornecer heranças.
+
+00:00:18.018 --> 00:00:20.654
+Está dizendo que
+no JavaScript não é assim?
+
+00:00:20.687 --> 00:00:25.459
+Não exatamente. Em JavaScript,
+usamos funções para criar objetos.
+
+00:00:25.492 --> 00:00:29.129
+Quando criamos uma sobremesa
+desta forma,
+
+00:00:29.162 --> 00:00:31.198
+"dessert", a sobremesa
+é uma função normal.
+
+00:00:31.231 --> 00:00:32.666
+Certo.
+
+00:00:32.699 --> 00:00:35.669
+Herdar dados e funcionalidades
+no JavaScript
+
+00:00:35.702 --> 00:00:37.371
+acontece via protótipos
+e heranças.
+
+00:00:37.404 --> 00:00:38.705
+Exatamente.
+
+00:00:38.739 --> 00:00:41.375
+Só porque temos
+novas palavras-chaves,
+
+00:00:41.408 --> 00:00:44.178
+como "class", "super"
+e "extends",
+
+00:00:44.211 --> 00:00:46.980
+isso não significa que a forma
+como a linguagem funciona mudou.
+
+00:00:47.014 --> 00:00:49.082
+JavaScript ainda usa funções
+
+00:00:49.116 --> 00:00:51.451
+e heranças de protótipos
+por baixo dos panos.
+
+00:00:51.485 --> 00:00:54.454
+Apenas há um novo jeito de escrever
+a mesma funcionalidade, certo?
+
+00:00:54.488 --> 00:00:56.056
+Isso mesmo.
+
+00:00:56.089 --> 00:01:00.194
+Mas lembre que a funcionalidade
+da linguagem não mudou.
+
+00:01:00.227 --> 00:01:04.464
+Certo. Então JavaScript não é
+uma linguagem baseada em classes.
+
+00:01:04.498 --> 00:01:06.200
+Ela usa funções
+para criar objetos
+
+00:01:06.233 --> 00:01:08.969
+e conecta os objetos
+via herança de protótipos.
+
+00:01:09.002 --> 00:01:12.139
+Isso. As classes do JavaScript
+são só uma miragem
+
+00:01:12.172 --> 00:01:15.676
+das funções normais
+e da herança de protótipos.
+

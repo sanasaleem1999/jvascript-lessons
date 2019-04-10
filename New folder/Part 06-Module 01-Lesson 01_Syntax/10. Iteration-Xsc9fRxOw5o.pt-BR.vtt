@@ -1,0 +1,122 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.023
+Então, o que é iteração?
+
+00:00:02.680 --> 00:00:04.599
+Provavelmente a melhor
+maneira de descrevê-la
+
+00:00:04.699 --> 00:00:06.417
+é olhar para um [for...of loop] normal.
+
+00:00:06.517 --> 00:00:08.177
+Quando você escreve um [for...of loop],
+
+00:00:08.277 --> 00:00:10.086
+você fornece ao [loop] uma variável.
+
+00:00:10.186 --> 00:00:12.610
+Tipicamente,
+esta variável é a letra i,
+
+00:00:12.710 --> 00:00:14.801
+porque ela costuma ser usada
+como um "iterador"
+
+00:00:14.901 --> 00:00:16.889
+para acompanhar o seu lugar no [loop].
+
+00:00:17.128 --> 00:00:19.334
+Quando você encaminha algo
+como uma matriz,
+
+00:00:19.670 --> 00:00:22.081
+este iterador trabalha como um [index]
+
+00:00:22.257 --> 00:00:25.623
+dando acesso a cada item na matriz,
+um após o outro.
+
+00:00:26.161 --> 00:00:28.060
+Isso que processa
+o próximo item obtido,
+
+00:00:28.160 --> 00:00:31.328
+um após o outro, é a iteração,
+que usamos há bastante tempo.
+
+00:00:31.428 --> 00:00:32.936
+Então, como isso nos ajuda,
+
+00:00:33.036 --> 00:00:35.810
+parece que a iteração sempre
+fez parte do script de trabalho.
+
+00:00:35.910 --> 00:00:37.314
+Então, o que há de novo no US6?
+
+00:00:37.667 --> 00:00:39.619
+Bem, algumas coisas.
+
+00:00:40.147 --> 00:00:42.196
+Primeiro,
+há uma nova interface de interação,
+
+00:00:42.296 --> 00:00:44.966
+que nos permite personalizar
+nosso objeto de iteração.
+
+00:00:45.066 --> 00:00:47.125
+Basicamente, eles serão verificados.
+
+00:00:47.444 --> 00:00:49.684
+Quando nos aprofundarmos nisso
+na lição 3,
+
+00:00:49.784 --> 00:00:51.064
+vamos falar sobre os símbolos.
+
+00:00:51.943 --> 00:00:54.203
+A segunda coisa,
+é que há um novo [loop],
+
+00:00:54.303 --> 00:00:56.219
+que é chamado de [for...of loop],
+
+00:00:56.319 --> 00:00:59.282
+que acompanha objetos exclusivos
+e iteráveis.
+
+00:01:00.256 --> 00:01:01.863
+Quando digo objetos iteráveis,
+
+00:01:01.963 --> 00:01:03.870
+significa apenas os objetos
+que implementam
+
+00:01:03.970 --> 00:01:04.970
+essa nova interface de iteração.
+
+00:01:05.070 --> 00:01:08.414
+Vê aqui o [for] e o [of]?
+
+00:01:09.023 --> 00:01:10.957
+Isso pode soar um pouco confuso.
+
+00:01:10.999 --> 00:01:12.404
+Então vamos voltar
+
+00:01:12.504 --> 00:01:15.480
+e olhar alguns exemplos
+de [for...of loops] tradicionais.
+
+00:01:15.620 --> 00:01:17.766
+E ver como esse novo [for...of loop]
+
+00:01:17.866 --> 00:01:20.166
+se destaca como a sua melhor
+opção para [loop].
+

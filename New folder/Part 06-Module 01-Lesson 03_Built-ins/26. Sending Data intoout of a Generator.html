@@ -1,0 +1,319 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sending Data into/out of a Generator</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Built-ins</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. New Built-ins.html">01. New Built-ins</a>
+    </li>
+    <li class="">
+      <a href="02. Symbols Intro.html">02. Symbols Intro</a>
+    </li>
+    <li class="">
+      <a href="03. Symbols.html">03. Symbols</a>
+    </li>
+    <li class="">
+      <a href="04. Iteration  Iterable Protocols.html">04. Iteration &amp; Iterable Protocols</a>
+    </li>
+    <li class="">
+      <a href="05. Sets.html">05. Sets</a>
+    </li>
+    <li class="">
+      <a href="06. Modifying Sets.html">06. Modifying Sets</a>
+    </li>
+    <li class="">
+      <a href="07. Working with Sets.html">07. Working with Sets</a>
+    </li>
+    <li class="">
+      <a href="08. Sets  Iterators.html">08. Sets &amp; Iterators</a>
+    </li>
+    <li class="">
+      <a href="09. Quiz Using Sets.html">09. Quiz: Using Sets</a>
+    </li>
+    <li class="">
+      <a href="10. WeakSets.html">10. WeakSets</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Working With WeakSets.html">11. Quiz: Working With WeakSets</a>
+    </li>
+    <li class="">
+      <a href="12. Maps.html">12. Maps</a>
+    </li>
+    <li class="">
+      <a href="13. Creating  Modifying Maps.html">13. Creating &amp; Modifying Maps</a>
+    </li>
+    <li class="">
+      <a href="14. Working with Maps.html">14. Working with Maps</a>
+    </li>
+    <li class="">
+      <a href="15. Looping Through Maps.html">15. Looping Through Maps</a>
+    </li>
+    <li class="">
+      <a href="16. WeakMaps.html">16. WeakMaps</a>
+    </li>
+    <li class="">
+      <a href="17. Promises Intro.html">17. Promises Intro</a>
+    </li>
+    <li class="">
+      <a href="18. Promises.html">18. Promises</a>
+    </li>
+    <li class="">
+      <a href="19. More Promises.html">19. More Promises</a>
+    </li>
+    <li class="">
+      <a href="20. Proxies Intro.html">20. Proxies Intro</a>
+    </li>
+    <li class="">
+      <a href="21. Proxies.html">21. Proxies</a>
+    </li>
+    <li class="">
+      <a href="22. Proxies vs. ES5 GetterSetter.html">22. Proxies vs. ES5 Getter/Setter</a>
+    </li>
+    <li class="">
+      <a href="23. Proxies Recap.html">23. Proxies Recap</a>
+    </li>
+    <li class="">
+      <a href="24. Generators.html">24. Generators</a>
+    </li>
+    <li class="">
+      <a href="25. Generators  Iterators.html">25. Generators &amp; Iterators</a>
+    </li>
+    <li class="">
+      <a href="26. Sending Data intoout of a Generator.html">26. Sending Data into/out of a Generator</a>
+    </li>
+    <li class="">
+      <a href="27. Lesson 3 Summary.html">27. Lesson 3 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">26. Sending Data into/out of a Generator</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>So we can get data out of a generator by using the yield keyword. We can also send data back <em>into</em> the generator, too. We do this using the <code>.next()</code> method:</p>
+<pre><code class="js language-js">function* displayResponse() {
+    const response = yield;
+    console.log(`Your response is "${response}"!`);
+}
+
+const iterator = displayResponse();
+
+iterator.next(); // starts running the generator function
+iterator.next('Hello Udacity Student'); // send data into the generator
+// the line above logs to the console: Your response is "Hello Udacity Student"!</code></pre>
+<p>Calling <code>.next()</code> with data (i.e. <code>.next('Richard')</code>) will send data into the generator function where it last left off. It will "replace" the yield keyword with the data that you provided.</p>
+<p>So the <code>yield</code> keyword is used to pause a generator <em>and</em> used to send data outside of the generator, and then the <code>.next()</code> method is used to pass data <em>into</em> the generator. Here's an example that makes use of both of these to cycle through a list of names one at a time:</p>
+<pre><code class="js language-js">function* getEmployee() {
+    const names = ['Amanda', 'Diego', 'Farrin', 'James', 'Kagure', 'Kavita', 'Orit', 'Richard'];
+    const facts = [];
+
+    for (const name of names) {
+        // yield *out* each name AND store the returned data into the facts array
+        facts.push(yield name); 
+    }
+
+    return facts;
+}
+
+const generatorIterator = getEmployee();
+
+// get the first name out of the generator
+let name = generatorIterator.next().value;
+
+// pass data in *and* get the next name
+name = generatorIterator.next(`${name} is cool!`).value; 
+
+// pass data in *and* get the next name
+name = generatorIterator.next(`${name} is awesome!`).value; 
+
+// pass data in *and* get the next name
+name = generatorIterator.next(`${name} is stupendous!`).value; 
+
+// you get the idea
+name = generatorIterator.next(`${name} is rad!`).value; 
+name = generatorIterator.next(`${name} is impressive!`).value;
+name = generatorIterator.next(`${name} is stunning!`).value;
+name = generatorIterator.next(`${name} is awe-inspiring!`).value;
+
+// pass the last data in, generator ends and returns the array
+const positions = generatorIterator.next(`${name} is magnificent!`).value; 
+
+// displays each name with description on its own line
+positions.join('\n'); </code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>What will happen if the following code is run?</p>
+<pre><code class="js language-js">function* createSundae() {
+    const toppings = [];
+
+    toppings.push(yield);
+    toppings.push(yield);
+    toppings.push(yield);
+
+    return toppings;
+}
+
+var it = createSundae();
+it.next('hot fudge');
+it.next('sprinkles');
+it.next('whipped cream');
+it.next();</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1492837873048" name="299613" id="a1492837873048">
+        <label for="a1492837873048"><p>The <code>toppings</code> array will have <code>undefined</code> as its last item</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1492837959516" name="299613" id="a1492837959516">
+        <label for="a1492837959516"><p>An error will occur</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1492838057271" name="299613" id="a1492838057271">
+        <label for="a1492838057271"><p>The generator will be paused, waiting for it's last call to <code>.next()</code></p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Generators are a powerful new kind of function that is able to pause its execution while also maintaining its own state. Generators are great for iterating over a list of items one at a time so you can handle each item on its own before moving on to the next one. You can also use generators to handle nested callbacks. For example, let's say that an app needs to get a list of all repositories <em>and</em> the number of times they've been starred. Well, before you can get the number of stars for each repository, you'd need to get the user's information. Then after retrieving the user's profile the code can then take that information to find all of the repositories. </p>
+<p>Generators will also be used heavily in upcoming additions to the JavaScript language. One upcoming feature that will make use of them is <a href="https://github.com/tc39/ecmascript-asyncawait" target="_blank">async functions</a>.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:02.436
+Bem-vindo a este curso
+sobre JavaScript Harmony.
+
+00:00:03.670 --> 00:00:07.074
+Mas... é... você não quer dizer ES6?
+Está escrito aqui.
+
+00:00:07.107 --> 00:00:09.343
+É verdade.
+Obrigado, Richard.
+
+00:00:09.376 --> 00:00:11.311
+Bem-vindo a este curso
+sobre ES6.
+
+00:00:11.345 --> 00:00:13.313
+Espera, espera!
+Desculpa.
+
+00:00:13.747 --> 00:00:15.916
+Mudou de novo, agora é ES2015.
+
+00:00:15.949 --> 00:00:17.184
+De novo, sério?
+
+00:00:17.284 --> 00:00:20.487
+Quer saber? Bem-vindo a este curso
+sobre o futuro do JavaScript.
+
+00:00:20.521 --> 00:00:21.722
+Eu sou James Parkes.
+
+00:00:21.755 --> 00:00:23.190
+E eu sou Richard Kalehoff.
+
+00:00:23.223 --> 00:00:25.092
+Seremos seus instrutores
+neste curso.
+
+00:00:25.125 --> 00:00:28.762
+Tecnicamente, Harmony,
+ES6 e ES2015
+
+00:00:28.795 --> 00:00:31.265
+são nomes diferentes
+para a mesma coisa.
+
+00:00:31.298 --> 00:00:32.966
+O que importa
+é que esses nomes
+
+00:00:32.999 --> 00:00:36.403
+representam a maior atualização
+à linguagem JavaScript.
+
+00:00:36.904 --> 00:00:39.139
+Avance de 1995 até hoje
+
+00:00:39.173 --> 00:00:41.508
+e verá que o JavaScript
+passou por um renascimento
+
+00:00:41.542 --> 00:00:44.378
+ao fazer melhorias necessárias
+à linguagem.
+
+00:00:44.411 --> 00:00:47.848
+Com essas melhorias, veio um grupo
+de novas palavras-chave,
+
+00:00:47.881 --> 00:00:49.316
+formas de escrever funções,
+
+00:00:49.349 --> 00:00:51.418
+ferramentas assíncronas
+e muito mais.
+
+00:00:51.451 --> 00:00:54.621
+Neste curso, explicaremos
+as mudanças na linguagem JavaScript
+
+00:00:54.655 --> 00:00:58.425
+para que você programe de forma
+mais rápida, limpa e eficiente.
+
+00:00:58.458 --> 00:01:00.894
+Nesta primeira aula,
+ressaltaremos as mudanças
+
+00:01:00.961 --> 00:01:03.163
+e adições à sintaxe
+do JavaScript.
+
+00:01:03.197 --> 00:01:06.834
+Na aula 2, investigaremos as
+atualizações às funções JavaScript.
+
+00:01:06.867 --> 00:01:09.970
+Na aula 3, falaremos
+dos novos bult-ins do ES6.
+
+00:01:10.003 --> 00:01:14.241
+Na aula 4, mostraremos como
+incorporar essas atualizações
+
+00:01:14.274 --> 00:01:16.543
+no seu próximo projeto
+de JavaScript.
+
+00:01:16.577 --> 00:01:18.846
+Richard, por onde
+devemos começar?
+
+00:01:18.879 --> 00:01:20.948
+Muitas palavras-chave
+foram adicionadas,
+
+00:01:20.981 --> 00:01:22.616
+então vamos começar
+por uma delas.
+
+00:01:22.649 --> 00:01:24.651
+Vamos dar uma olhada
+em "let" e "const".
+
+00:01:24.685 --> 00:01:26.720
+Certo, parece uma boa ideia.
+

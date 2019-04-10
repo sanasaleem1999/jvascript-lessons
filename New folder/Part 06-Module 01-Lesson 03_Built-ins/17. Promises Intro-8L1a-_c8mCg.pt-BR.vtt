@@ -1,0 +1,124 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.267 --> 00:00:02.202
+Promessas são
+um conceito interessante
+
+00:00:02.236 --> 00:00:06.607
+e resolvem alguns problemas
+de versões anteriores do JavaScript.
+
+00:00:06.640 --> 00:00:08.141
+Usar uma promessa do JavaScript
+
+00:00:08.175 --> 00:00:11.044
+é a nova forma de lidar
+com solicitações assíncronas.
+
+00:00:11.078 --> 00:00:13.080
+Assim como a maioria
+das mudanças no ES6,
+
+00:00:13.113 --> 00:00:16.283
+é uma melhoria na forma
+como estruturamos o código.
+
+00:00:16.316 --> 00:00:17.985
+Vejamos um exemplo.
+
+00:00:18.018 --> 00:00:20.721
+James está esperando pacientemente
+para pegar meu pedido.
+
+00:00:20.754 --> 00:00:23.724
+Então,se eu disser:
+"Pode me dar um sundae?"
+
+00:00:23.757 --> 00:00:26.293
+Finalmente.
+Achei que nunca fosse pedir.
+
+00:00:27.027 --> 00:00:29.530
+Ótimo!
+Eu fiz minha solicitação,
+
+00:00:29.563 --> 00:00:33.700
+e ele me deu isto, representando
+que retornará com alguma coisa.
+
+00:00:33.734 --> 00:00:37.638
+Eu devo esperar aqui
+até ele voltar para me entregar?
+
+00:00:37.671 --> 00:00:41.175
+Enquanto ele faz o sundae,
+posso trabalhar em outro projeto?
+
+00:00:43.544 --> 00:00:45.479
+Quando ele terminar o sorvete,
+
+00:00:45.512 --> 00:00:47.147
+ele pode me avisar
+que está pronto,
+
+00:00:47.214 --> 00:00:49.583
+e eu posso continuar
+de onde parei.
+
+00:00:49.616 --> 00:00:51.418
+Richard, seu sundae
+está pronto.
+
+00:00:51.451 --> 00:00:56.723
+Ótimo! Pode pôr calda de chocolate,
+caramelo, creme e uma cereja?
+
+00:00:56.757 --> 00:00:58.258
+Claro.
+
+00:00:58.292 --> 00:01:00.027
+Obrigado.
+
+00:01:00.060 --> 00:01:01.728
+Agora volto a esperar.
+
+00:01:01.762 --> 00:01:04.398
+Ficar indo e vindo
+fazendo solicitações,
+
+00:01:04.431 --> 00:01:06.767
+ter um tempo de espera
+enquanto a solicitação é executada,
+
+00:01:07.000 --> 00:01:09.169
+poder trabalhar
+durante esse período
+
+00:01:09.203 --> 00:01:11.605
+e depois ser notificado
+quando estiver pronto
+
+00:01:11.638 --> 00:01:14.107
+são as funções das promessas
+no JavaScript.
+
+00:01:14.141 --> 00:01:17.511
+Elas trabalham com "faça isso agora"
+e me notificam quando termina,
+
+00:01:17.544 --> 00:01:19.046
+assim continuo de onde parei.
+
+00:01:19.079 --> 00:01:21.081
+Seu sundae está pronto.
+
+00:01:21.114 --> 00:01:23.617
+Obrigado, parece ótimo.
+Aqui está.
+
+00:01:25.118 --> 00:01:28.155
+Vamos ver como criar
+e trabalhar com promessas.
+

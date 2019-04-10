@@ -1,0 +1,100 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.580
+Welcome to this course on JavaScript Harmony.
+
+00:00:03.580 --> 00:00:11.419
+Oh, don't you mean ES6? It says right here.
+
+00:00:11.419 --> 00:00:14.522
+Oh, right. Sorry. Thanks Richard.
+
+00:00:14.522 --> 00:00:18.593
+Welcome to this course on ES6.
+
+00:00:18.593 --> 00:00:18.629
+Wait, wait. Sorry. It's changed again it's now ES2015.
+
+00:00:18.629 --> 00:00:19.649
+What? Again? Really? You know what, welcome to this course on the future of
+
+00:00:19.649 --> 00:00:21.570
+JavaScript. I am James Parkes.
+
+00:00:21.570 --> 00:00:23.089
+And I am Richard Kalehoff.
+
+00:00:23.089 --> 00:00:24.978
+We will be your instructors for this course.
+
+00:00:24.978 --> 00:00:28.789
+Technically, Harmony ES6 and ES2015,
+
+00:00:28.789 --> 00:00:31.434
+they're all different names for virtually the same thing.
+
+00:00:31.434 --> 00:00:33.420
+The important thing is that these names represent
+
+00:00:33.420 --> 00:00:36.745
+the biggest update to the JavaScript programming language today.
+
+00:00:36.744 --> 00:00:40.229
+Fast forward from 1995 to today and JavaScript has
+
+00:00:40.229 --> 00:00:44.359
+undergone a renaissance of sorts by making some much needed improvements to the language.
+
+00:00:44.359 --> 00:00:48.012
+And with these improvements come a whole new batch of keywords,
+
+00:00:48.012 --> 00:00:49.289
+ways of writing functions,
+
+00:00:49.289 --> 00:00:51.494
+asynchronous goodies and so much more.
+
+00:00:51.494 --> 00:00:53.339
+In this course, we will explore the additions to
+
+00:00:53.340 --> 00:00:56.070
+the JavaScript programming language so you can write faster,
+
+00:00:56.070 --> 00:00:58.530
+cleaner, and more efficient code.
+
+00:00:58.530 --> 00:01:00.480
+In this first lesson, we will start by outlining
+
+00:01:00.479 --> 00:01:03.050
+changes and additions to the JavaScript Syntax.
+
+00:01:03.051 --> 00:01:06.689
+In lesson two, we will investigate updates to JavaScript Functions.
+
+00:01:06.688 --> 00:01:09.868
+In lesson three, we will cover new ES6 Built-ins.
+
+00:01:09.868 --> 00:01:12.629
+And in lesson four, we will wrap things up by showing you how you can
+
+00:01:12.629 --> 00:01:16.629
+incorporate these latest updates into your next JavaScript project.
+
+00:01:16.629 --> 00:01:18.920
+Richard, what shall we start with first?
+
+00:01:18.920 --> 00:01:21.019
+Well, a bunch of keywords have been added to the language.
+
+00:01:21.019 --> 00:01:22.634
+So, let's start with one of those.
+
+00:01:22.635 --> 00:01:25.779
+Let us take a look at let in context.
+
+00:01:25.778 --> 00:01:26.750
+Yeah, that sounds good.
+

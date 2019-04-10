@@ -1,0 +1,54 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:02.402
+Parabéns por ter terminado
+a lição 3.
+
+00:00:02.436 --> 00:00:06.139
+A essa altura, você já viu
+praticamente tudo sobre ES,
+
+00:00:06.173 --> 00:00:08.141
+mas ainda temos uma lição.
+
+00:00:08.175 --> 00:00:10.844
+Talvez você pense que,
+com os avanços do JavaScript,
+
+00:00:10.878 --> 00:00:14.982
+você já poderia usar todas
+as novas ferramentas no ES6.
+
+00:00:15.015 --> 00:00:16.984
+Porém, não é o caso.
+
+00:00:17.017 --> 00:00:20.320
+Às vezes, há situações
+em que os navegadores não suportam
+
+00:00:20.354 --> 00:00:23.323
+as ferramentas mais novas
+do JavaScript.
+
+00:00:23.357 --> 00:00:25.659
+Na lição 4, você verá como,
+apesar disso,
+
+00:00:25.692 --> 00:00:27.394
+ainda pode escrever
+códigos de ES6
+
+00:00:27.427 --> 00:00:29.997
+que funcionem no futuro,
+com os navegadores atualizados,
+
+00:00:30.030 --> 00:00:32.966
+mas que também funcionem
+com navegadores não tão avançados.
+
+00:00:33.000 --> 00:00:35.569
+Vamos aplicar o que você aprendeu
+na próxima lição.
+

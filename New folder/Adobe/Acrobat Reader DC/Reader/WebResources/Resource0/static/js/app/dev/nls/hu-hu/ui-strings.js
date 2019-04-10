@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012-2015 Adobe Systems Incorporated, All Rights Reserved.",HELP:"Súgó",PRIVACY:"Adatvédelem",TERMS:"Feltételek",COOKIES:"Cookie-k",PRIVACY_POLICY:"Adatvédelem és Cookie-k",TERMS_OF_USE:"Szabályzat",WELCOME_MSG:"Az Adobe Document Services használatával a fájlokat bármilyen eszközről elérheti",LOAD_FAILURES:"Hibák betöltése",MODULES_NOT_LOADED:"A következő modulokat nem sikerült betölteni:<br/><br/><%= modules %>",SIGN_IN:"Bejelentkezés",CREATE_ACCOUNT:"Fiók létrehozása",FORGOT_PASSWORD:"Problémája van a bejelentkezéssel?",EMAIL_VERIFICATION:"E-mail ellenőrzése",PDF_SERVICES:"  /  PDF szolgáltatások",ACCOUNT:"Fiók",LINK_CREATIVE_CLOUD_ACCOUNT:"Creative Cloud fiók csatolása...",LINK_DROPBOX_ACCOUNT:"Dropbox fiók csatolása...",MANAGE_SUB:"Tervem...",USER_ACCOUNT:"Felhasználói fiók...",ASK_US_A_QUESTION:"Kérdezzen tőlünk...",SUPPORT:"Támogatás...",CHAT_WITH_US:"Beszélgessen velünk...",ABOUT_APP:"A Document Cloud névjegye",SIGN_OUT:"Kijelentkezés",SHOW_PROGRESS:"Folyamat mutatása",PROGRESS_COMPLETE:"Folyamat befejeződött",REMOVE_HISTORY:"Előzmények törlése",OPERATION_IN_PROGRESS_DLG_TITLE:"Művelet folyamatban",OPERATION_IN_PROGRESS_DLG_MSG:"Jelenleg egy művelet van folyamatban. A folytatás törli az adott műveletet. Szeretné folytatni?",QUOTA_LEGEND:"<%= using %> / <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Tárolás túllépve (<a class='quota-display-learn-more'>További tudnivalók</a>)",ABOUT_DLG_TITLE:"A Document Cloud névjegye",ABOUT_DLG_COPYRIGHT_PARA:"Copyright © 2012-2015 Adobe Systems Incorporated and its licensors. All Rights Reserved.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, the Adobe logo, and Acrobat are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. All other trademarks are the property of their respective owners.",ABOUT_DLG_PORTIONS_PARA:"Részek felhasználva:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. All Rights Reserved.",ABOUT_DLG_IRIS_PARA:"OCR-technológia: Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. All rights reserved.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Harmadik fél megjegyzései, felhasználási feltételek harmadik fél szoftvereire vonatkozólag megtalálhatók itt: <%= thirdPartyLink %> és referenciaként szolgálnak.",ABOUT_DLG_BUILD_NUMBER:"Változat: <%= buildNum %>",NO_CONNECTION_TITLE:"Nincs internetkapcsolat",NO_CONNECTION_MSG:"A terület funkcióihoz internetkapcsolat szükséges. Csatlakoztassa a számítógépet az internethez, és próbálja újra.",NETWORK_FAILURE:"Hálózati kapcsolat hibája",NETWORK_DISCONNECTED:"Úgy tűnik, nincs hálózati kapcsolat. A Reader nem minden funkciója működik hálózati kapcsolat nélkül"});

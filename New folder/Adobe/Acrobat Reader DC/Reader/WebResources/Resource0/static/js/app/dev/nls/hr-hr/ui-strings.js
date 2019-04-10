@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012.-2015., Adobe Systems Incorporated, sva prava pridržana.",HELP:"Pomoć",PRIVACY:"Privatnost",TERMS:"Uvjeti",COOKIES:"Kolačići",PRIVACY_POLICY:"Pravila zaštite privatnosti i kolačići",TERMS_OF_USE:"Uvjeti upotrebe",WELCOME_MSG:"Koristite Adobe usluge za dokumente i datotekama pristupite pomoću bilo kojeg uređaja",LOAD_FAILURES:"Neuspjelo učitavanje",MODULES_NOT_LOADED:"Sljedeći moduli nisu se mogli učitati:<br/><br/><%= modules %>",SIGN_IN:"Prijava",CREATE_ACCOUNT:"Napravi račun",FORGOT_PASSWORD:"Imate li problema pri prijavi?",EMAIL_VERIFICATION:"Potvrda adrese e-pošte",PDF_SERVICES:"  /  PDF usluge",ACCOUNT:"Račun",LINK_CREATIVE_CLOUD_ACCOUNT:"Povezivanje Creative Cloud računa...",LINK_DROPBOX_ACCOUNT:"Povezivanje Dropbox računa...",MANAGE_SUB:"Moj plan...",USER_ACCOUNT:"Korisnički račun...",ASK_US_A_QUESTION:"Postavite nam pitanje...",SUPPORT:"Podrška...",CHAT_WITH_US:"Čavrljajte s nama...",ABOUT_APP:"Više o softveru Document Cloud...",SIGN_OUT:"Odjava",SHOW_PROGRESS:"Prikaži napredak",PROGRESS_COMPLETE:"Dovršetak",REMOVE_HISTORY:"Ukloni povijest",OPERATION_IN_PROGRESS_DLG_TITLE:"Operacija u tijeku",OPERATION_IN_PROGRESS_DLG_MSG:"Postoji operacija koja je u tijeku. Ako nastavite, ta operacija bit će poništena. Želite li nastaviti?",QUOTA_LEGEND:"<%= using %> od <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Prekoračen kapacitet spremišta (<a class='quota-display-learn-more'>Saznajte više</a>)",ABOUT_DLG_TITLE:"Više o softveru Document Cloud",ABOUT_DLG_COPYRIGHT_PARA:"Autorska prava © 2012.-2015., Adobe Systems Incorporated i davatelji licenci. Sva prava pridržana.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, logotip Adobe i Acrobat registrirani su trgovački znakovi ili trgovački znakovi tvrtke Adobe Systems Incorporated u SAD-u i/ili drugim državama. Svi drugi trgovački znakovi pripadaju svojim vlasnicima.",ABOUT_DLG_PORTIONS_PARA:"Dijelovi koriste:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. Sva prava pridržana.",ABOUT_DLG_IRIS_PARA:"OCR tehnologija tvrtke Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. Sva prava pridržana.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Napomene o trećim stranama, uvjeti i odredbe koje se odnose na softver treće strane možete pronaći na stranici <%= thirdPartyLink %>, a ovdje su uključene kao referenca.",ABOUT_DLG_BUILD_NUMBER:"Međuverzija: <%= buildNum %>",NO_CONNECTION_TITLE:"Nema internetske veze",NO_CONNECTION_MSG:"Za značajke u ovom području potrebna je internetska veza. Uspostavite internetsku vezu na računalu i pokušajte ponovo.",NETWORK_FAILURE:"Neuspjelo povezivanje s mrežom",NETWORK_DISCONNECTED:"Izgleda da nema mrežne veze. Reader možda neće biti u potpunosti funkcionalan ako nema mrežne veze"});

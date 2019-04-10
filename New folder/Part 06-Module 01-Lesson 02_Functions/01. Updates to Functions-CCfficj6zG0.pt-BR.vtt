@@ -1,0 +1,58 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.200 --> 00:00:02.236
+Bem-vindo de volta.
+Nesta lição,
+
+00:00:02.269 --> 00:00:05.272
+falaremos sobre as atualizações
+das funções no ES6.
+
+00:00:05.305 --> 00:00:08.342
+As funções mudaram muito
+desde a última versão do JavaScript.
+
+00:00:08.375 --> 00:00:11.211
+Há uma nova forma de criar funções
+chamada "Arrow Functions"
+
+00:00:11.245 --> 00:00:12.846
+e a nova palavra-chave
+"class",
+
+00:00:12.879 --> 00:00:15.115
+que permite a criação
+de funções como classes.
+
+00:00:15.616 --> 00:00:17.351
+Isso não é tudo.
+No ES6,
+
+00:00:17.384 --> 00:00:19.920
+você pode definir parâmetros
+padronizados de função,
+
+00:00:19.953 --> 00:00:22.523
+além de poder conectar
+diferentes classes
+
+00:00:22.556 --> 00:00:24.992
+usando as novas palavras-chave
+"super" e "extends".
+
+00:00:25.025 --> 00:00:27.361
+Houve muitas mudanças.
+
+00:00:27.394 --> 00:00:30.464
+É melhor começarmos logo
+antes que mudem mais alguma coisa.
+
+00:00:30.497 --> 00:00:32.065
+Espera, o quê? Mais mudanças?
+
+00:00:32.099 --> 00:00:34.268
+Vamos falar primeiro
+sobre as arrow functions.
+

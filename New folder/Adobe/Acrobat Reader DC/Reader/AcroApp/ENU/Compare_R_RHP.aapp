@@ -1,0 +1,11 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Compare Files" id="ComparePDFRdrApp" description="Compare and highlight the differences between two files" majorVersion="1" minorVersion="0" inAppUpsellEnabled="true">
+	<Commands>
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="ComparePDFAppRHPView" fontSize="12"/>
+			</ContentView>
+		</Layout>
+	</Layouts>
+</Application>

@@ -1,0 +1,61 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.533 --> 00:00:03.167
+Um polyfill é utilizado
+para preencher um buraco
+
+00:00:03.200 --> 00:00:06.567
+em um navegador que não tem
+suporte nativo ao atributo.
+
+00:00:06.600 --> 00:00:08.600
+Esse polyfill primeiro confere
+
+00:00:08.633 --> 00:00:11.833
+se o nativo "startsWith"
+existe mesmo.
+
+00:00:11.867 --> 00:00:14.033
+Por quê?
+Porque, se existir,
+
+00:00:14.067 --> 00:00:17.433
+não queremos reescrever
+a versão nativa com esta.
+
+00:00:17.467 --> 00:00:19.300
+Se não existir,
+
+00:00:19.333 --> 00:00:21.167
+o navegador rodando
+esse polyfill
+
+00:00:21.200 --> 00:00:23.500
+vai rodar este código inteiro.
+
+00:00:23.533 --> 00:00:27.600
+Isto aqui adiciona um novo método
+ao objeto "String.prototype".
+
+00:00:27.633 --> 00:00:29.667
+O padrão da função
+será a posição
+
+00:00:29.700 --> 00:00:32.600
+indicada pelo segundo argumento
+que foi passado
+
+00:00:32.633 --> 00:00:35.433
+ou será o primeiro caractere
+do string.
+
+00:00:35.467 --> 00:00:38.100
+Então ele retorna
+verdadeiro ou falso
+
+00:00:38.133 --> 00:00:42.967
+se o string passado for o mesmo
+que estamos vendo aqui.
+

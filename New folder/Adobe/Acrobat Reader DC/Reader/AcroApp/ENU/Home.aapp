@@ -1,0 +1,12 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Home" id="AVHome" majorVersion="1" minorVersion="0">
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="HomeView" type="Custom"/>
+			</ContentView>
+			<RHP>
+				<Component name="HomeRHPView" type="Custom"/>
+			</RHP>
+		</Layout>
+	</Layouts>
+</Application>

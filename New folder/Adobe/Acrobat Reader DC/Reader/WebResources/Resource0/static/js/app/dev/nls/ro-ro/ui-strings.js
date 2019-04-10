@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012-2015 Adobe Systems Incorporated. Toate drepturile rezervate.",HELP:"Asistenţă",PRIVACY:"Confidenţialitate",TERMS:"Termeni",COOKIES:"Cookie-uri",PRIVACY_POLICY:"Politica de confidenţialitate şi modulele cookie",TERMS_OF_USE:"Termeni de utilizare",WELCOME_MSG:"Utilizaţi serviciile Adobe Document şi accesaţi fişierele de pe orice dispozitiv",LOAD_FAILURES:"Încărcări nereuşite",MODULES_NOT_LOADED:"Următoarele module nu s-au încărcat:<br/><br/><%= modules %>",SIGN_IN:"Conectare",CREATE_ACCOUNT:"Creare cont",FORGOT_PASSWORD:"Dificultăţi la conectare?",EMAIL_VERIFICATION:"Verificare e-mail",PDF_SERVICES:"  /  Servicii PDF",ACCOUNT:"Cont",LINK_CREATIVE_CLOUD_ACCOUNT:"Asociere cont Creative Cloud...",LINK_DROPBOX_ACCOUNT:"Asociere cont Dropbox...",MANAGE_SUB:"Planul meu...",USER_ACCOUNT:"Cont utilizator...",ASK_US_A_QUESTION:"Puneţi-ne o întrebare...",SUPPORT:"Asistenţă...",CHAT_WITH_US:"Conversaţi cu noi prin chat...",ABOUT_APP:"Despre Document Cloud...",SIGN_OUT:"Deconectare",SHOW_PROGRESS:"Afişare progres",PROGRESS_COMPLETE:"Progres finalizat",REMOVE_HISTORY:"Eliminare istoric",OPERATION_IN_PROGRESS_DLG_TITLE:"Operaţie în curs",OPERATION_IN_PROGRESS_DLG_MSG:"Există o operaţiune în curs. Continuarea va anula operaţia respectivă. Doriţi să continuaţi?",QUOTA_LEGEND:"<%= using %> din <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Stocare depăşită (<a class='quota-display-learn-more'>Informaţii suplimentare</a>)",ABOUT_DLG_TITLE:"Despre Document Cloud",ABOUT_DLG_COPYRIGHT_PARA:"Copyright © 2012-2015 Adobe Systems Incorporated şi distribuitorii săi de licenţe. Toate drepturile rezervate.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, sigla Adobe şi Acrobat sunt fie mărci înregistrate, fie mărci comerciale ale Adobe Systems Incorporated în Statele Unite şi/sau în alte ţări. Toate celelalte mărci comerciale aparţin proprietarilor respectivi.",ABOUT_DLG_PORTIONS_PARA:"Anumite porţiuni utilizează:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. Toate drepturile rezervate.",ABOUT_DLG_IRIS_PARA:"Tehnologie OCR de la Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. Toate drepturile rezervate.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Notele terţă parte şi termenii şi condiţiile referitoare la software terţă parte pot fi găsite la adresa <%= thirdPartyLink %> şi sunt încorporate aici prin referinţă.",ABOUT_DLG_BUILD_NUMBER:"Versiune: <%= buildNum %>",NO_CONNECTION_TITLE:"Nicio conexiune la internet",NO_CONNECTION_MSG:"Caracteristicile din această zonă necesită conexiune la internet. Conectaţi calculatorul la internet şi încercaţi din nou.",NETWORK_FAILURE:"Eroare de conexiune la reţea",NETWORK_DISCONNECTED:"Se pare că nu există nicio conexiune la reţea. Reader ar putea să nu fie complet funcţional în absenţa unei conexiuni la rețea."});

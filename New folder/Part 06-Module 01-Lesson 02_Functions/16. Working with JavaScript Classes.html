@@ -1,0 +1,329 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Working with JavaScript Classes</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Functions</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Updates to Functions.html">01. Updates to Functions</a>
+    </li>
+    <li class="">
+      <a href="02. Arrow Functions.html">02. Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="03. Using Arrow Functions.html">03. Using Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="04. Quiz Convert Function into an Arrow Function (2-1).html">04. Quiz: Convert Function into an Arrow Function (2-1)</a>
+    </li>
+    <li class="">
+      <a href="05. Arrow Functions Recap.html">05. Arrow Functions Recap</a>
+    </li>
+    <li class="">
+      <a href="06. Arrow Functions and the this Keyword.html">06. Arrow Functions and the &quot;this&quot; Keyword</a>
+    </li>
+    <li class="">
+      <a href="07. this and Regular Functions.html">07. &quot;this&quot; and Regular Functions</a>
+    </li>
+    <li class="">
+      <a href="08. this and Arrow Functions.html">08. &quot;this&quot; and Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="09. Default Function Parameters.html">09. Default Function Parameters</a>
+    </li>
+    <li class="">
+      <a href="10. Defaults and Destructuring.html">10. Defaults and Destructuring</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Using Default Function Parameters (2-2).html">11. Quiz: Using Default Function Parameters (2-2)</a>
+    </li>
+    <li class="">
+      <a href="12. Class Preview.html">12. Class Preview</a>
+    </li>
+    <li class="">
+      <a href="13. JavaScript&#x27;s Illusion of Classes.html">13. JavaScript&#x27;s Illusion of Classes</a>
+    </li>
+    <li class="">
+      <a href="14. JavaScript Classes.html">14. JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="15. Convert a Function to a Class.html">15. Convert a Function to a Class</a>
+    </li>
+    <li class="">
+      <a href="16. Working with JavaScript Classes.html">16. Working with JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="17. Super and Extends.html">17. Super and Extends</a>
+    </li>
+    <li class="">
+      <a href="18. Extending Classes from ES5 to ES6.html">18. Extending Classes from ES5 to ES6</a>
+    </li>
+    <li class="">
+      <a href="19. Working with JavaScript Subclasses.html">19. Working with JavaScript Subclasses</a>
+    </li>
+    <li class="">
+      <a href="20. Quiz Building Classes and Subclasses (2-3).html">20. Quiz: Building Classes and Subclasses (2-3)</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson 2 Summary.html">21. Lesson 2 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">16. Working with JavaScript Classes</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="class-is-just-a-function">Class is just a function</h2>
+<p>Just to prove that there isn't anything special about <code>class</code>, check out this code:</p>
+<pre><code class="js language-js">class Plane {
+  constructor(numEngines) {
+    this.numEngines = numEngines;
+    this.enginesActive = false;
+  }
+
+  startEngines() {
+    console.log('starting engines…');
+    this.enginesActive = true;
+  }
+}
+
+typeof Plane; // function</code></pre>
+<blockquote>
+  <p><strong>Returns:</strong> function</p>
+</blockquote>
+<p>That's right—it's just a function! There isn't even a new type added to JavaScript.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <blockquote>
+  <h2 id="⚠️--where-are-all-the-commas-⚠️">⚠️  Where Are All The Commas? ⚠️</h2>
+</blockquote>
+<blockquote>
+  <p>Did you notice that there aren't any commas between the method definitions in the Class? Commas are not used to separate properties or methods in a Class. If you add them, you'll get a <code>SyntaxError</code> of <code>unexpected token ,</code></p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>ES6 Classes</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Take a look at the following code:</p>
+<pre><code class="js language-js">class Animal {
+  constructor(name = 'Sprinkles', energy = 100) {
+    this.name = name;
+    this.energy = energy;
+  }
+
+  eat(food) {
+    this.energy += food / 3;
+  }
+}</code></pre>
+<p>Which of the following are true?</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1485281919970" name="261202" id="a1485281919970">
+      <label for="a1485281919970"><p>The <code>eat()</code> method ends up on <code>Animal.prototype</code>.</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485281974750" name="261202" id="a1485281974750">
+      <label for="a1485281974750"><p>typeof Animal === 'class'</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485281975278" name="261202" id="a1485281975278">
+      <label for="a1485281975278"><p>typeof Animal === 'function'</p></label>
+    </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="static-methods">Static methods</h2>
+<p>To add a static method, the keyword <code>static</code> is placed in front of the method name. Look at the <code>badWeather()</code> method in the code below.</p>
+<pre><code class="js language-js">class Plane {
+  constructor(numEngines) {
+    this.numEngines = numEngines;
+    this.enginesActive = false;
+  }
+
+  static badWeather(planes) {
+    for (plane of planes) {
+      plane.enginesActive = false;
+    }
+  }
+
+  startEngines() {
+    console.log('starting engines…');
+    this.enginesActive = true;
+  }
+}</code></pre>
+<p>See how <code>badWeather()</code> has the word <code>static</code> in front of it while <code>startEngines()</code> doesn't? That makes <code>badWeather()</code> a method that's accessed directly on the <code>Plane</code> class, so you can call it like this:</p>
+<pre><code class="js language-js">Plane.badWeather([plane1, plane2, plane3]);</code></pre>
+<blockquote>
+  <p><strong>NOTE:</strong> A little hazy on how constructor functions, class methods, or prototypal inheritance works? We've got a course on it! Check out <a href="https://www.udacity.com/course/object-oriented-javascript--ud015" target="_blank">Object Oriented JavaScript</a>.</p>
+</blockquote>
+<h2 id="benefits-of-classes">Benefits of classes</h2>
+<ol>
+<li>Less setup<ul>
+<li>There's a lot less code that you need to write to create a function</li></ul></li>
+<li>Clearly defined constructor function<ul>
+<li>Inside the class definition, you can clearly specify the constructor function.</li></ul></li>
+<li>Everything's contained<ul>
+<li>All code that's needed for the class is contained in the class declaration. Instead of having the constructor function in one place, then adding methods to the prototype one-by-one, you can do everything all at once!</li></ul></li>
+</ol>
+<h2 id="things-to-look-out-for-when-using-classes">Things to look out for when using classes</h2>
+<ol>
+<li><code>class</code> is not magic<ul>
+<li>The <code>class</code> keyword brings with it a lot of mental constructs from other, class-based languages. It doesn't magically add this functionality to JavaScript classes.</li></ul></li>
+<li><code>class</code> is a mirage over prototypal inheritance<ul>
+<li>We've said this many times before, but under the hood, a JavaScript class just uses prototypal inheritance.</li></ul></li>
+<li>Using classes requires the use of <code>new</code><ul>
+<li>When creating a new instance of a JavaScript class, the <code>new</code> keyword must be used</li></ul></li>
+</ol>
+<p>For example,</p>
+<pre><code class="js language-js">class Toy {
+   ...
+}
+
+const myToy1 = Toy(); // throws an error</code></pre>
+<blockquote>
+  <p><strong>Uncaught TypeError:</strong> Class constructor Toy cannot be invoked without 'new'</p>
+</blockquote>
+<p>but, adding the <code>new</code> keyword fixes the problem</p>
+<pre><code class="js language-js">const myToy2 = new Toy(); // this works!</code></pre>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

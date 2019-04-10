@@ -1,0 +1,11 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Enhance Scans" id="ScanPDFRdrApp" description="Turn scans or photos of paper documents into searchable PDFs with selectable text" majorVersion="1" minorVersion="0" inAppUpsellEnabled="true">
+	<Commands>
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="ScanPDFAppRHPView" fontSize="12"/>
+			</ContentView>
+		</Layout>
+	</Layouts>
+</Application>

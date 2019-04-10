@@ -1,0 +1,9 @@
+{
+  "name": "com.adobe.acrobat.chrome_webcapture",
+  "description": "Adobe Acrobat WebCapture Native Host",
+  "path": "WCChromeNativeMessagingHost.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/"
+  ]
+}

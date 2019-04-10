@@ -1,0 +1,372 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Let and Const</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Syntax</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Harmony, ES6, ES2015....html">01. Harmony, ES6, ES2015...</a>
+    </li>
+    <li class="">
+      <a href="02. Let and Const.html">02. Let and Const</a>
+    </li>
+    <li class="">
+      <a href="03. Quiz Using Let and Const (1-1).html">03. Quiz: Using Let and Const (1-1)</a>
+    </li>
+    <li class="">
+      <a href="04. Template Literals.html">04. Template Literals</a>
+    </li>
+    <li class="">
+      <a href="05. Quiz Build an HTML Fragment (1-2).html">05. Quiz: Build an HTML Fragment (1-2)</a>
+    </li>
+    <li class="">
+      <a href="06. Destructuring.html">06. Destructuring</a>
+    </li>
+    <li class="">
+      <a href="07. Quiz Destructuring Arrays (1-3).html">07. Quiz: Destructuring Arrays (1-3)</a>
+    </li>
+    <li class="">
+      <a href="08. Object Literal Shorthand.html">08. Object Literal Shorthand</a>
+    </li>
+    <li class="">
+      <a href="09. Lesson 1 Checkup.html">09. Lesson 1 Checkup</a>
+    </li>
+    <li class="">
+      <a href="10. Iteration.html">10. Iteration</a>
+    </li>
+    <li class="">
+      <a href="11. Family of For Loops.html">11. Family of For Loops</a>
+    </li>
+    <li class="">
+      <a href="12. For...of Loop.html">12. For...of Loop</a>
+    </li>
+    <li class="">
+      <a href="13. Quiz Writing a For...of Loop (1-4).html">13. Quiz: Writing a For...of Loop (1-4)</a>
+    </li>
+    <li class="">
+      <a href="14. Spread... Operator.html">14. Spread... Operator</a>
+    </li>
+    <li class="">
+      <a href="15. Rest Parameter.html">15. ...Rest Parameter</a>
+    </li>
+    <li class="">
+      <a href="16. Quiz Using the Rest Parameter (1-5).html">16. Quiz: Using the Rest Parameter (1-5)</a>
+    </li>
+    <li class="">
+      <a href="17. Lesson 1 Summary.html">17. Lesson 1 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">02. Let and Const</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>There are now two new ways to declare variables in JavaScript: <strong>let</strong> and <strong>const</strong>.</p>
+<p>Up until now, the only way to declare a variable in JavaScript was to use the keyword <code>var</code>. To understand why <code>let</code> and <code>const</code> were added, it’s probably best to look at an example of when using <code>var</code> can get us into trouble.</p>
+<p>Take a look at the following code.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Hoisted to the Top</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>What do you expect to be the output from running <code>getClothing(false)</code>?</p>
+<pre><code class="js language-js">function getClothing(isCold) {
+  if (isCold) {
+    var freezing = 'Grab a jacket!';
+  } else {
+    var hot = 'It’s a shorts kind of day.';
+    console.log(freezing);
+  }
+}</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1476810114376" name="196662" id="a1476810114376">
+        <label for="a1476810114376"><p>ReferenceError: freezing is not defined</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476810147102" name="196662" id="a1476810147102">
+        <label for="a1476810147102"><p>Grab a jacket!</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476810147734" name="196662" id="a1476810147734">
+        <label for="a1476810147734"><p>undefined</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476810148238" name="196662" id="a1476810148238">
+        <label for="a1476810148238"><p>It's a shorts kind of day.</p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="hoisting">Hoisting</h2>
+<p>Hoisting is a result of how JavaScript is interpreted by your browser. Essentially, before any JavaScript code is executed, all variables are "hoisted", which means they're raised to the top of the function scope. So at run-time, the <code>getClothing()</code> function actually looks more like this…</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Hoisting Animation</p></h3>
+  <video controls>
+  <source src="02. Hoisting Animation-znkyiX50Ehk.mp4" type="video/mp4">
+
+</video>
+
+
+  <div class="jumbotron" style="margin-top: 50px; margin-bottom: 50px;">
+    <h3>INSTRUCTOR NOTE:</h3>
+    <div style="text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;">Before the function is executed, all variables are hoisted to the top of the function scope. So what’s our solution?</div>
+  </div>
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="let-and-const">let and const</h2>
+<p>Variables declared with <code>let</code> and <code>const</code> eliminate this specific issue of hoisting because they’re scoped <strong>to the block</strong>, not to the function. Previously, when you used <code>var</code>, variables were either scoped <em>globally</em> or <em>locally</em> to an entire function scope.</p>
+<p>If a variable is declared using <code>let</code> or <code>const</code> inside a block of code (denoted by curly braces <code>{ }</code>), then the variable is stuck in what is known as the <strong>temporal dead zone</strong> until the variable’s declaration is processed. This behavior prevents variables from being accessed only until after they’ve been declared.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Block Scoped</p></h3>
+  <video controls>
+  <source src="02. Block Scoped-tQ02WllxScU.mp4" type="video/mp4">
+
+</video>
+
+
+  <div class="jumbotron" style="margin-top: 50px; margin-bottom: 50px;">
+    <h3>INSTRUCTOR NOTE:</h3>
+    <div style="text-align: center; color: #afafaf; font-size: 14px; margin-top: 15px;">Variables declared with `let` and `const` are only available within the block they're declared.</div>
+  </div>
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Temporal Dead Zone</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>What do you expect to be the output from running <code>getClothing(false)</code>?</p>
+<pre><code class="js language-js">function getClothing(isCold) {
+  if (isCold) {
+    const freezing = 'Grab a jacket!';
+  } else {
+    const hot = 'It’s a shorts kind of day.';
+    console.log(freezing);
+  }
+}</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1476822686695" name="196695" id="a1476822686695">
+        <label for="a1476822686695"><p>ReferenceError: freezing is not defined</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1480375649190" name="196695" id="a1480375649190">
+        <label for="a1480375649190"><p>Grab a jacket!</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1480375649839" name="196695" id="a1480375649839">
+        <label for="a1480375649839"><p>undefined</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1480375650358" name="196695" id="a1480375650358">
+        <label for="a1480375650358"><p>It's a shorts kind of day.</p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="rules-for-using-let-and-const">Rules for using let and const</h2>
+<p><code>let</code> and <code>const</code> also have some other interesting properties.</p>
+<ul>
+<li>Variables declared with <code>let</code> can be reassigned, but can’t be redeclared in the same scope.</li>
+<li>Variables declared with <code>const</code> must be assigned an initial value, but can’t be redeclared in the same scope, and can’t be reassigned.</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Assignment with Let</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>What do you expect to be output from running the following code?</p>
+<pre><code class="js language-js">let instructor = 'James';
+instructor = 'Richard';
+console.log(instructor);</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1476822752527" name="196697" id="a1476822752527">
+        <label for="a1476822752527"><p>James</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476822765910" name="196697" id="a1476822765910">
+        <label for="a1476822765910"><p>Richard</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476822769046" name="196697" id="a1476822769046">
+        <label for="a1476822769046"><p>undefined</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1480379378224" name="196697" id="a1480379378224">
+        <label for="a1480379378224"><p>SyntaxError: Identifier 'instructor' has already been declared</p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="use-cases">Use cases</h2>
+<p>The big question is when should you use <code>let</code> and <code>const</code>? The general rule of thumb is as follows:</p>
+<ul>
+<li>use <code>let</code> when you plan to reassign new values to a variable, and</li>
+<li>use <code>const</code> when you don’t plan on reassigning new values to a variable.</li>
+</ul>
+<p>Since <code>const</code> is the strictest way to declare a variable, we suggest that you always declare variables with <code>const</code> because it'll make your code easier to reason about since you know the identifiers won't change throughout the lifetime of your program. If you find that you need to update a variable or change it, then go back and switch it from <code>const</code> to <code>let</code>.</p>
+<p>That’s pretty straightforward, right? But what about <code>var</code>?</p>
+<h2 id="what-about-var">What about var?</h2>
+<p>Is there any reason to use <code>var</code> anymore? <em>Not really</em>.</p>
+<p>There are some arguments that can be made for using <code>var</code> in situations where you want to globally define variables, but this is often considered bad practice and should be avoided. From now on, we suggest ditching <code>var</code> in place of using <code>let</code> and <code>const</code>.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

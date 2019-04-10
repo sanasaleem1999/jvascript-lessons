@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012-2015 Adobe Systems Incorporated, All Rights Reserved.",HELP:"Довідка",PRIVACY:"Конфіденційність",TERMS:"Умови",COOKIES:"Файли cookie",PRIVACY_POLICY:"Політика конфіденційності та правила використання файлів Cookie",TERMS_OF_USE:"Умови використання",WELCOME_MSG:"Користуйтеся службами Adobe для обробки документів та отримуйте доступ до своїх файлів із будь-якого пристрою",LOAD_FAILURES:"Помилки завантаження",MODULES_NOT_LOADED:"Помилка завантаження таких модулів:<br/><br/><%= modules %>",SIGN_IN:"Увійти",CREATE_ACCOUNT:"Створити обліковий запис",FORGOT_PASSWORD:"Не вдається ввійти до системи?",EMAIL_VERIFICATION:"Підтвердження адреси електронної пошти",PDF_SERVICES:"  /  Служби PDF",ACCOUNT:"Обліковий запис",LINK_CREATIVE_CLOUD_ACCOUNT:"Пов'язати обліковий запис Creative Cloud...",LINK_DROPBOX_ACCOUNT:"Пов'язати обліковий запис Dropbox...",MANAGE_SUB:"Мій план...",USER_ACCOUNT:"Обліковий запис користувача...",ASK_US_A_QUESTION:"Поставити запитання...",SUPPORT:"Підтримка...",CHAT_WITH_US:"Поспілкуйтеся з нами...",ABOUT_APP:"Про Document Cloud...",SIGN_OUT:"Вийти",SHOW_PROGRESS:"Показати стан виконання",PROGRESS_COMPLETE:"Стан виконання",REMOVE_HISTORY:"Вилучити історію",OPERATION_IN_PROGRESS_DLG_TITLE:"Триває виконання операції",OPERATION_IN_PROGRESS_DLG_MSG:"Триває виконання операції. Якщо продовжити, операцію буде скасовано. Продовжити, незважаючи на це?",QUOTA_LEGEND:"<%= using %> із <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Перевищено ліміт обсягу для зберігання (<a class='quota-display-learn-more'>Дізнатися більше</a>)",ABOUT_DLG_TITLE:"Про Document Cloud",ABOUT_DLG_COPYRIGHT_PARA:"Copyright © 2012-2015 Adobe Systems Incorporated and its licensors. All Rights Reserved.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, the Adobe logo, and Acrobat are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. All other trademarks are the property of their respective owners.",ABOUT_DLG_PORTIONS_PARA:"Portions utilize:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. All Rights Reserved.",ABOUT_DLG_IRIS_PARA:"Технологія оптичного розпізнавання даних належить Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. All rights reserved.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Повідомлення третіх сторін, умови використання програмного забезпечення сторонніх виробників можна переглянути за посиланням <%= thirdPartyLink %>.",ABOUT_DLG_BUILD_NUMBER:"Розробницька версія: <%= buildNum %>",NO_CONNECTION_TITLE:"Інтернет-з'єднання відсутнє",NO_CONNECTION_MSG:"Функції цього розділу працюють за наявності з'єднання з мережею. Установіть інтернет-з'єднання свого комп'ютера та повторіть спробу.",NETWORK_FAILURE:"Збій з'єднання з мережею",NETWORK_DISCONNECTED:"Виявляється, з'єднання з мережею відсутнє. За відсутності з'єднання можуть бути доступні не всі функції програми Reader"});

@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012-2015 Adobe Systems Incorporated, All Rights Reserved.",HELP:"Справка",PRIVACY:"Конфиденциальность",TERMS:"Условия",COOKIES:"Файлы cookie",PRIVACY_POLICY:"Политика конфиденциальности и файлы Cookie",TERMS_OF_USE:"Условия использования",WELCOME_MSG:"Используйте Adobe Document Services и открывайте ваши файлы на любом устройстве",LOAD_FAILURES:"Ошибки при загрузке",MODULES_NOT_LOADED:"Не были загружены следующие модули:<br/><br/><%= modules %>",SIGN_IN:"Войти",CREATE_ACCOUNT:"Создать учетную запись",FORGOT_PASSWORD:"Проблемы при входе в систему?",EMAIL_VERIFICATION:"Проверка адреса электронной почты",PDF_SERVICES:"  /  PDF-сервисы",ACCOUNT:"Учетная запись",LINK_CREATIVE_CLOUD_ACCOUNT:"Подключить учетную запись Creative Cloud",LINK_DROPBOX_ACCOUNT:"Подключить учетную запись Dropbox",MANAGE_SUB:"Мой план...",USER_ACCOUNT:"Учетная запись...",ASK_US_A_QUESTION:"Задайте нам вопрос...",SUPPORT:"Поддержка...",CHAT_WITH_US:"Поговорите с нами...",ABOUT_APP:"О Document Cloud...",SIGN_OUT:"Выход",SHOW_PROGRESS:"Показать ход выполнения",PROGRESS_COMPLETE:"Процесс завершен",REMOVE_HISTORY:"Удалить историю",OPERATION_IN_PROGRESS_DLG_TITLE:"Выполняется операция",OPERATION_IN_PROGRESS_DLG_MSG:"В настоящее время выполняется некоторая операция. Продолжение приведет к отмене этой операции. Вы хотите продолжить?",QUOTA_LEGEND:"<%= using %> из <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Квота хранилища израсходована (<a class='quota-display-learn-more'>Подробнее</a>)",ABOUT_DLG_TITLE:"О Document Cloud",ABOUT_DLG_COPYRIGHT_PARA:"Copyright © 2012-2015 Adobe Systems Incorporated and its licensors. All Rights Reserved.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, the Adobe logo, and Acrobat are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. All other trademarks are the property of their respective owners.",ABOUT_DLG_PORTIONS_PARA:"Portions utilize:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. All Rights Reserved.",ABOUT_DLG_IRIS_PARA:"OCR technology by Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. All rights reserved.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Third Party notices, terms and conditions pertaining to third party software can be found at <%= thirdPartyLink %> and are incorporated by reference herein.",ABOUT_DLG_BUILD_NUMBER:"Версия: <%= buildNum %>",NO_CONNECTION_TITLE:"Отсутствует подключение к Интернету",NO_CONNECTION_MSG:"Для работы функций в данной области необходимо интернет-соединение.",NETWORK_FAILURE:"Ошибка сетевого подключения",NETWORK_DISCONNECTED:"Не удается обнаружить подключение по сети. Без подключения по сети не все функции Reader могут быть доступны"});

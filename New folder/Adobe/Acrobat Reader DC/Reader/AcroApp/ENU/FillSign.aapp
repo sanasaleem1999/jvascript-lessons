@@ -1,0 +1,62 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Fill &amp; Sign" description="Fill and sign documents and forms electronically" id="FillSignApp" requiresDoc="true" majorVersion="1" minorVersion="0">
+	<Commands>
+		<Command name="FSS:Tool:Text"/>
+		<Command name="FSS:Tool:Crosscheck"/>
+		<Command name="FSS:Tool:Checkmark"/>
+		<Command name="FSS:Tool:Circle"/>
+		<Command name="FSS:Tool:Line"/>
+		<Command name="FSS:Tool:Dot"/>
+		<Command name="FSS:DigSig" layout="Native" />
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<TopBar align="Center">
+			</TopBar>
+		</Layout>
+		<Layout name="Modern">
+			<TopBar align="Center">
+				<Component name="FSS:Tool:Text"/>
+				<Component name="FSS:Tool:Crosscheck"/>
+				<Component name="FSS:Tool:Checkmark"/>
+				<Component name="FSS:Tool:Circle"/>
+				<Component name="FSS:Tool:Line"/>
+				<Component name="FSS:Tool:Dot"/>
+				<Component type="Separator" />
+				<Component name="FSS:DigSig" showLabel="true"/>
+			</TopBar>
+			<ContentView>
+				<Component name="FillSignView" type="Custom"/>
+			</ContentView>
+		</Layout>
+		<Layout name="Native">
+			<TopBar align="Center">
+				<Component name="FSS:Tool:SigNative" type="Custom"/>
+			</TopBar>
+			<RHP>
+				<Component label="GET STARTED" fontSize="12" bold="true" />
+				<Component type="Table" columns="1" hAlign="left" vAlign="center">
+					<Component type="Custom" name="FSS:InfoText" fontSize="14" />
+				</Component>
+				<Component type="FlipBook" name="FSS:SendOptions">
+					<Component type="FlipBookPage" name="FSS:SendOptionOn">
+						<Component type="Table" columns="1" hAlign="center" vAlign="center">
+							<Component type="Separator" />
+						</Component>
+						<Component type="Table" columns="1" hAlign="left" vAlign="center" topOffset="15">
+							<Component label="SEND OPTIONS" fontSize="12" bold="true" />
+						</Component>
+					</Component>
+					<Component type="FlipBookPage" name="FSS:SendOptionOff">
+						<!-- Nothing we show here -->
+					</Component>
+				</Component>
+				<Component type="Table" columns="1" hAlign="center" vAlign="center" topOffset="0" bottomOffset="0">
+					<Component type="Custom" name="FSS:SendTrack" label="Send &amp; Track" buttonType="secondary" height="30" width="200" fontSize="14" semibold="true" hPadding="20"/>
+				</Component>
+				<Component type="Table" columns="1" hAlign="center" vAlign="center" topOffset="0">
+					<Component type="Custom" name="FSS:GetOtherSign" label="Get Others to Sign" buttonType="secondary" height="30" width="200" fontSize="14" semibold="true" hPadding="20"/>
+				</Component>
+			</RHP>
+		</Layout>
+	</Layouts>
+</Application>

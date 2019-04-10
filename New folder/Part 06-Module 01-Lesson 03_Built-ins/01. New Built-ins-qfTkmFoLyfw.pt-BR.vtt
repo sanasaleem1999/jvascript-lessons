@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:01.502
+Bem-vindo de volta.
+
+00:00:01.535 --> 00:00:06.039
+Nesta aula, exploraremos
+o novo conjunto de buit-ins do ES6.
+
+00:00:06.073 --> 00:00:08.141
+Agora temos conjuntos,
+mapas, promessas
+
+00:00:08.175 --> 00:00:11.044
+e muitos outros built-ins
+à disposição.
+
+00:00:11.078 --> 00:00:13.247
+Demorou um pouco para o JavaScript
+se atualizar,
+
+00:00:13.280 --> 00:00:16.350
+mas esses built-ins tornam
+muito mais fácil executar tarefas
+
+00:00:16.383 --> 00:00:19.987
+que eram mais difíceis
+em versões anteriores.
+
+00:00:20.053 --> 00:00:21.154
+Durante esta aula,
+
+00:00:21.188 --> 00:00:24.157
+veremos como esses built-ins
+são estruturados, como funcionam
+
+00:00:24.191 --> 00:00:26.660
+e qual é o melhor momento
+para utilizá-los.
+
+00:00:26.693 --> 00:00:29.096
+Para começar,
+vamos falar de símbolos.
+

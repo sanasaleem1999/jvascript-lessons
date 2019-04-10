@@ -1,0 +1,83 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.400 --> 00:00:03.103
+Vamos mudar de assunto
+e falar sobre proxies.
+
+00:00:03.136 --> 00:00:04.905
+Em inglês, "proxy" significa...
+
+00:00:04.938 --> 00:00:07.140
+Oi, eu preciso entregar isto
+ao Richard.
+
+00:00:07.174 --> 00:00:09.042
+Ele está meio ocupado.
+
+00:00:09.076 --> 00:00:11.411
+Tudo bem.
+Você pode assinar aqui, então?
+
+00:00:11.445 --> 00:00:12.579
+Sim, claro.
+
+00:00:16.683 --> 00:00:18.151
+Obrigada.
+
+00:00:19.319 --> 00:00:23.123
+Em inglês, "proxy" significa
+"algo que representa outra pessoa".
+
+00:00:23.156 --> 00:00:24.825
+Em ES6...
+
+00:00:25.626 --> 00:00:28.061
+Oi. Posso falar com o Richard
+por um segundo?
+
+00:00:28.095 --> 00:00:30.163
+-Claro. Espera aí.
+-Maneiro.
+
+00:00:34.001 --> 00:00:35.002
+Está bem.
+
+00:00:35.035 --> 00:00:36.870
+Ele pediu para você voltar
+em 5 minutos.
+
+00:00:36.904 --> 00:00:38.572
+Certo, está bem.
+
+00:00:39.373 --> 00:00:41.508
+Onde eu estava?
+Ah, é verdade.
+
+00:00:41.542 --> 00:00:44.178
+A novidade no ES6
+são proxies de JavaScript.
+
+00:00:44.211 --> 00:00:47.681
+Um proxy de JavaScript permite
+que um objeto substitua outro
+
+00:00:47.748 --> 00:00:50.551
+e lide com todas as interações
+para esse outro objeto.
+
+00:00:50.617 --> 00:00:52.519
+Ele cuida das solicitações
+diretamente,
+
+00:00:52.553 --> 00:00:54.788
+passa dados para o objeto alvo
+
+00:00:54.821 --> 00:00:56.590
+e faz muitas outras coisas.
+
+00:00:56.623 --> 00:00:59.726
+Vejamos como criar um proxy
+em JavaScript.
+

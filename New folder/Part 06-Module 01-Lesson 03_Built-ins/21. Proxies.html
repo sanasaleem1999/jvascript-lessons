@@ -1,0 +1,319 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Proxies</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Built-ins</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. New Built-ins.html">01. New Built-ins</a>
+    </li>
+    <li class="">
+      <a href="02. Symbols Intro.html">02. Symbols Intro</a>
+    </li>
+    <li class="">
+      <a href="03. Symbols.html">03. Symbols</a>
+    </li>
+    <li class="">
+      <a href="04. Iteration  Iterable Protocols.html">04. Iteration &amp; Iterable Protocols</a>
+    </li>
+    <li class="">
+      <a href="05. Sets.html">05. Sets</a>
+    </li>
+    <li class="">
+      <a href="06. Modifying Sets.html">06. Modifying Sets</a>
+    </li>
+    <li class="">
+      <a href="07. Working with Sets.html">07. Working with Sets</a>
+    </li>
+    <li class="">
+      <a href="08. Sets  Iterators.html">08. Sets &amp; Iterators</a>
+    </li>
+    <li class="">
+      <a href="09. Quiz Using Sets.html">09. Quiz: Using Sets</a>
+    </li>
+    <li class="">
+      <a href="10. WeakSets.html">10. WeakSets</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Working With WeakSets.html">11. Quiz: Working With WeakSets</a>
+    </li>
+    <li class="">
+      <a href="12. Maps.html">12. Maps</a>
+    </li>
+    <li class="">
+      <a href="13. Creating  Modifying Maps.html">13. Creating &amp; Modifying Maps</a>
+    </li>
+    <li class="">
+      <a href="14. Working with Maps.html">14. Working with Maps</a>
+    </li>
+    <li class="">
+      <a href="15. Looping Through Maps.html">15. Looping Through Maps</a>
+    </li>
+    <li class="">
+      <a href="16. WeakMaps.html">16. WeakMaps</a>
+    </li>
+    <li class="">
+      <a href="17. Promises Intro.html">17. Promises Intro</a>
+    </li>
+    <li class="">
+      <a href="18. Promises.html">18. Promises</a>
+    </li>
+    <li class="">
+      <a href="19. More Promises.html">19. More Promises</a>
+    </li>
+    <li class="">
+      <a href="20. Proxies Intro.html">20. Proxies Intro</a>
+    </li>
+    <li class="">
+      <a href="21. Proxies.html">21. Proxies</a>
+    </li>
+    <li class="">
+      <a href="22. Proxies vs. ES5 GetterSetter.html">22. Proxies vs. ES5 Getter/Setter</a>
+    </li>
+    <li class="">
+      <a href="23. Proxies Recap.html">23. Proxies Recap</a>
+    </li>
+    <li class="">
+      <a href="24. Generators.html">24. Generators</a>
+    </li>
+    <li class="">
+      <a href="25. Generators  Iterators.html">25. Generators &amp; Iterators</a>
+    </li>
+    <li class="">
+      <a href="26. Sending Data intoout of a Generator.html">26. Sending Data into/out of a Generator</a>
+    </li>
+    <li class="">
+      <a href="27. Lesson 3 Summary.html">27. Lesson 3 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">21. Proxies</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>To create a proxy object, we use the Proxy constructor - <code>new Proxy();</code>. The proxy constructor takes two items:</p>
+<ul>
+<li>the object that it will be the proxy for</li>
+<li>an object containing the list of methods it will handle for the proxied object</li>
+</ul>
+<p>The second object is called the <strong>handler</strong>.</p>
+<h2 id="a-pass-through-proxy">A Pass Through Proxy</h2>
+<p>The simplest way to create a proxy is to provide an object and then an empty handler object.</p>
+<pre><code class="js language-js">var richard = {status: 'looking for work'};
+var agent = new Proxy(richard, {});
+
+agent.status; // returns 'looking for work'</code></pre>
+<p>The above doesn't actually do anything special with the proxy - it just passes the request directly to the source object! If we want the proxy object to actually intercept the request, that's what the handler object is for!</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>The key to making Proxies useful is the handler object that's passed as the second object to the Proxy constructor. The handler object is made up of a methods that will be used for property access. Let's look at the <code>get</code>:</p>
+<h2 id="get-trap">Get Trap</h2>
+<p>The <code>get</code> trap is used to "intercept" calls to properties:</p>
+<pre><code class="js language-js">const richard = {status: 'looking for work'};
+const handler = {
+    get(target, propName) {
+        console.log(target); // the `richard` object, not `handler` and not `agent`
+        console.log(propName); // the name of the property the proxy (`agent` in this case) is checking
+    }
+};
+const agent = new Proxy(richard, handler);
+agent.status; // logs out the richard object (not the agent object!) and the name of the property being accessed (`status`)</code></pre>
+<p>In the code above, the <code>handler</code> object has a <code>get</code> method (called a "trap" since it's being used in a Proxy). When the code <code>agent.status;</code> is run on the last line, because the <code>get</code> trap exists, it "intercepts" the call to get the <code>status</code> property and runs the <code>get</code> trap function. This will log out the target object of the proxy (the <code>richard</code> object) and then logs out the name of the property being requested (the <code>status</code> property). <em>And that's all it does!</em> It doesn't actually log out the property! This is important - <em>if a trap is used, you need to make sure you provide all the functionality for that specific trap</em>.</p>
+<h3 id="accessing-the-target-object-from-inside-the-proxy">Accessing the Target object from inside the proxy</h3>
+<p>If we wanted to actually provide the real result, we would need to return the property on the target object:</p>
+<pre><code class="js language-js">const richard = {status: 'looking for work'};
+const handler = {
+    get(target, propName) {
+        console.log(target);
+        console.log(propName);
+        return target[propName];
+    }
+};
+const agent = new Proxy(richard, handler);
+agent.status; // (1)logs the richard object, (2)logs the property being accessed, (3)returns the text in richard.status</code></pre>
+<p>Notice we added the <code>return target[propName];</code> as the last line of the <code>get</code> trap. This will access the property on the target object and will return it. </p>
+<h3 id="having-the-proxy-return-info-directly">Having the proxy return info, directly</h3>
+<p>Alternatively, we could use the proxy to provide direct feedback:</p>
+<pre><code class="js language-js">const richard = {status: 'looking for work'};
+const handler = {
+    get(target, propName) {
+        return `He's following many leads, so you should offer a contract as soon as possible!`;
+    }
+};
+const agent = new Proxy(richard, handler);
+agent.status; // returns the text `He's following many leads, so you should offer a contract as soon as possible!`</code></pre>
+<p>With this code, the Proxy doesn't even check the target object, it just directly responds to the calling code.</p>
+<p>So the <code>get</code> trap will take over whenever any property on the proxy is accessed. If we want to intercept calls to <em>change</em> properties, then the <code>set</code> trap needs to be used!</p>
+<p>The <code>set</code> trap is used for intercepting code that will <em>change a property</em>. The <code>set</code> trap receives:<br />
+the object it proxies<br />
+the property that is being set<br />
+the new value for the proxy</p>
+<pre><code class="js language-js">const richard = {status: 'looking for work'};
+const handler = {
+    set(target, propName, value) {
+        if (propName === 'payRate') { // if the pay is being set, take 15% as commission
+            value = value * 0.85;
+        }
+        target[propName] = value;
+    }
+};
+const agent = new Proxy(richard, handler);
+agent.payRate = 1000; // set the actor's pay to $1,000
+agent.payRate; // $850 the actor's actual pay</code></pre>
+<p>In the code above, notice that the <code>set</code> trap checks to see if the <code>payRate</code> property is being set. If it is, then the proxy (the agent) takes 15 percent off the top for her own commission! Then, when the actor's pay is set to one thousand dollars, since the <code>payRate</code> property was used, the code took 15% off the top and set the actual <code>payRate</code> property to <code>850</code>;</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="other-traps">Other Traps</h2>
+<p>So we've looked at the <code>get</code> and <code>set</code> traps (which are probably the ones you'll use most often), but there are actually a total of 13 different traps that can be used in a handler!</p>
+<ol>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/get" target="_blank">the get trap</a> - lets the proxy handle calls to property access</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/set" target="_blank">the set trap</a> - lets the proxy handle setting the property to a new value</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/apply" target="_blank">the apply trap</a> - lets the proxy handle being invoked (the object being proxied is a function)</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/has" target="_blank">the has trap</a> - lets the proxy handle the using <code>in</code> operator</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/deleteProperty" target="_blank">the deleteProperty trap</a> - lets the proxy handle if a property is deleted</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/ownKeys" target="_blank">the ownKeys trap</a> - lets the proxy handle when all keys are requested</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/construct" target="_blank">the construct trap</a> - lets the proxy handle when the proxy is used with the <code>new</code> keyword as a constructor</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/defineProperty" target="_blank">the defineProperty trap</a> - lets the proxy handle when defineProperty is used to create a new property on the object</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/getOwnPropertyDescriptor" target="_blank">the getOwnPropertyDescriptor trap</a> - lets the proxy handle getting the property's descriptors</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/preventExtensions" target="_blank">the preventExtenions trap</a> - lets the proxy handle calls to <code>Object.preventExtensions()</code> on the proxy object</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/isExtensible" target="_blank">the isExtensible trap</a> - lets the proxy handle calls to <code>Object.isExtensible</code> on the proxy object</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/getPrototypeOf" target="_blank">the getPrototypeOf trap</a> - lets the proxy handle calls to <code>Object.getPrototypeOf</code> on the proxy object</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy/handler/setPrototypeOf" target="_blank">the setPrototypeOf trap</a> - lets the proxy handle calls to <code>Object.setPrototypeOf</code> on the proxy object</li>
+</ol>
+<p>As you can see, there are a lot of traps that let the proxy manage how it handles calls back and forth to the proxied object.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

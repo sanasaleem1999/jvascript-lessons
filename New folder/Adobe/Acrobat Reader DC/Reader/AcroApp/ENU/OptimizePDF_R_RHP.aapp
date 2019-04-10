@@ -1,0 +1,11 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Optimize PDF" description="Reduce PDF file size, enable fast web view, control image and font options" id="OptimizePDFRdrApp" majorVersion="1" minorVersion="0">
+	<Commands>
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="OptimizePDFAppRHPView" fontSize="12"/>
+			</ContentView>
+		</Layout>
+	</Layouts>	
+</Application>

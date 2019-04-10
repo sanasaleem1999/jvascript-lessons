@@ -1,0 +1,11 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Export PDF" description="Convert PDFs to Word, Excel, PowerPoint and more" id="EPDFAppFull" majorVersion="1" minorVersion="0">
+	<Commands>
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="ExportPDFView" type="Custom"/>
+			</ContentView>
+		</Layout>
+	</Layouts>
+</Application>

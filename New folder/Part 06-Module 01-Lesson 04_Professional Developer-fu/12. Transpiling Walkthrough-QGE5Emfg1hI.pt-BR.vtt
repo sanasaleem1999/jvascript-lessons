@@ -1,0 +1,75 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.333 --> 00:00:02.300
+O arquivo "package.json"
+do projeto
+
+00:00:02.333 --> 00:00:06.367
+lista todos os pacotes NPM
+dos quais o projeto depende.
+
+00:00:06.400 --> 00:00:08.933
+Este projeto depende
+de "babel-cli"
+
+00:00:08.967 --> 00:00:10.633
+e o preset de 2015,
+
+00:00:10.667 --> 00:00:14.133
+que é uma coleção
+de todos os plugins do ES6.
+
+00:00:14.167 --> 00:00:17.467
+São esses plugins que serão
+baixados e instalados.
+
+00:00:17.500 --> 00:00:20.267
+Uma vez instalados,
+dizemos ao "babel-cli"
+
+00:00:20.300 --> 00:00:23.200
+quais plugins usar
+para fazer a transpilação.
+
+00:00:23.233 --> 00:00:25.233
+O Cli vai acessar
+o arquivo "babel-cr"
+
+00:00:25.267 --> 00:00:28.300
+para saber quais plugins
+e presets usar.
+
+00:00:28.867 --> 00:00:32.133
+O arquivo "package.json" lista
+o que deveria ser instalado,
+
+00:00:32.167 --> 00:00:37.067
+e o arquivo "babel-cr" informa
+que plugins usar na transpilação.
+
+00:00:37.100 --> 00:00:39.300
+Agora que babel sabe
+que deve usar este preset,
+
+00:00:39.333 --> 00:00:41.800
+precisamos fazer
+com que transpile o código.
+
+00:00:41.833 --> 00:00:43.700
+Para isso, adicionamos
+um script "built"
+
+00:00:43.733 --> 00:00:47.433
+que diz ao babel para pegar
+os arquivos do diretório do ES6,
+
+00:00:47.467 --> 00:00:50.467
+fazer a transpilação deles
+usando os presets de 2015
+
+00:00:50.500 --> 00:00:53.867
+e salvar o código transformado
+no diretório ES5.
+

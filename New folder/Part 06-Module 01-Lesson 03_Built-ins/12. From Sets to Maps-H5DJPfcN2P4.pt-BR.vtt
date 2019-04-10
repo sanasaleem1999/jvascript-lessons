@@ -1,0 +1,62 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.436
+Acabamos de ver
+Sets e WeakSets,
+
+00:00:02.469 --> 00:00:05.539
+mas quero voltar sua atenção
+aos Maps e WeakMaps.
+
+00:00:05.672 --> 00:00:07.074
+Maps e WeakMaps
+
+00:00:07.107 --> 00:00:10.043
+têm muitas coisas em comum
+com Sets e WeakSets.
+
+00:00:10.110 --> 00:00:12.513
+Eles têm propriedades
+e métodos parecidos
+
+00:00:12.546 --> 00:00:15.716
+Maps e Sets são iteráveis, ou seja,
+podemos fazer loops sobre eles.
+
+00:00:15.749 --> 00:00:17.251
+WeakMaps e WeakSets
+
+00:00:17.284 --> 00:00:20.053
+não impedem os objetos
+de irem para a garbage collection.
+
+00:00:20.087 --> 00:00:21.388
+Porém, Maps são únicos,
+
+00:00:21.421 --> 00:00:24.024
+porque são coleções de pares
+de valores de chaves.
+
+00:00:24.057 --> 00:00:27.094
+Já Sets são conjuntos
+de valores únicos.
+
+00:00:27.127 --> 00:00:29.463
+Poderíamos dizer
+que Sets estão para matrizes
+
+00:00:29.496 --> 00:00:31.298
+como Maps estão para objetos.
+
+00:00:31.331 --> 00:00:33.333
+Isso, legal.
+
+00:00:33.367 --> 00:00:34.735
+Na próxima aula,
+
+00:00:34.768 --> 00:00:38.038
+veremos como criar e usar
+Maps e WeakMaps.
+

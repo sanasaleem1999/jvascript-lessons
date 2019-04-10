@@ -1,0 +1,253 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Working with Sets</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Built-ins</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. New Built-ins.html">01. New Built-ins</a>
+    </li>
+    <li class="">
+      <a href="02. Symbols Intro.html">02. Symbols Intro</a>
+    </li>
+    <li class="">
+      <a href="03. Symbols.html">03. Symbols</a>
+    </li>
+    <li class="">
+      <a href="04. Iteration  Iterable Protocols.html">04. Iteration &amp; Iterable Protocols</a>
+    </li>
+    <li class="">
+      <a href="05. Sets.html">05. Sets</a>
+    </li>
+    <li class="">
+      <a href="06. Modifying Sets.html">06. Modifying Sets</a>
+    </li>
+    <li class="">
+      <a href="07. Working with Sets.html">07. Working with Sets</a>
+    </li>
+    <li class="">
+      <a href="08. Sets  Iterators.html">08. Sets &amp; Iterators</a>
+    </li>
+    <li class="">
+      <a href="09. Quiz Using Sets.html">09. Quiz: Using Sets</a>
+    </li>
+    <li class="">
+      <a href="10. WeakSets.html">10. WeakSets</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Working With WeakSets.html">11. Quiz: Working With WeakSets</a>
+    </li>
+    <li class="">
+      <a href="12. Maps.html">12. Maps</a>
+    </li>
+    <li class="">
+      <a href="13. Creating  Modifying Maps.html">13. Creating &amp; Modifying Maps</a>
+    </li>
+    <li class="">
+      <a href="14. Working with Maps.html">14. Working with Maps</a>
+    </li>
+    <li class="">
+      <a href="15. Looping Through Maps.html">15. Looping Through Maps</a>
+    </li>
+    <li class="">
+      <a href="16. WeakMaps.html">16. WeakMaps</a>
+    </li>
+    <li class="">
+      <a href="17. Promises Intro.html">17. Promises Intro</a>
+    </li>
+    <li class="">
+      <a href="18. Promises.html">18. Promises</a>
+    </li>
+    <li class="">
+      <a href="19. More Promises.html">19. More Promises</a>
+    </li>
+    <li class="">
+      <a href="20. Proxies Intro.html">20. Proxies Intro</a>
+    </li>
+    <li class="">
+      <a href="21. Proxies.html">21. Proxies</a>
+    </li>
+    <li class="">
+      <a href="22. Proxies vs. ES5 GetterSetter.html">22. Proxies vs. ES5 Getter/Setter</a>
+    </li>
+    <li class="">
+      <a href="23. Proxies Recap.html">23. Proxies Recap</a>
+    </li>
+    <li class="">
+      <a href="24. Generators.html">24. Generators</a>
+    </li>
+    <li class="">
+      <a href="25. Generators  Iterators.html">25. Generators &amp; Iterators</a>
+    </li>
+    <li class="">
+      <a href="26. Sending Data intoout of a Generator.html">26. Sending Data into/out of a Generator</a>
+    </li>
+    <li class="">
+      <a href="27. Lesson 3 Summary.html">27. Lesson 3 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">07. Working with Sets</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="working-with-sets">Working With Sets</h2>
+<h3 id="checking-the-length">Checking The Length</h3>
+<p>Once you’ve constructed your Set, there are a couple of different properties and methods you can use to work with Sets.</p>
+<p>Use the <code>.size</code> property to return the number of items in a Set:</p>
+<pre><code class="js language-js">const months = new Set(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']);
+console.log(months.size);</code></pre>
+<blockquote>
+  <p><code>12</code></p>
+</blockquote>
+<p>Remember, Sets can’t be accessed by their index like an array, so you use the <code>.size</code> property instead of <code>.length</code> property to get the size of the Set.</p>
+<h3 id="checking-if-an-item-exists">Checking If An Item Exists</h3>
+<p>Use the <code>.has()</code> method to check if an item exists in a Set. If the item is in the Set, then <code>.has()</code> will return <code>true</code>. If the item doesn’t exist in the Set, then <code>.has()</code> will return <code>false</code>.</p>
+<pre><code class="js language-js">console.log(months.has('September'));</code></pre>
+<blockquote>
+  <p><code>true</code></p>
+</blockquote>
+<h3 id="retrieving-all-values">Retrieving All Values</h3>
+<p>Finally, use the <code>.values()</code> method to return the values in a Set. The return value of the <code>.values()</code> method is a <code>SetIterator</code> object.</p>
+<pre><code class="js language-js">console.log(months.values());</code></pre>
+<blockquote>
+  <p><code>SetIterator {'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'}</code></p>
+</blockquote>
+<p>More on the <code>SetIterator</code> object in a second!</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <blockquote>
+  <p><strong>TIP</strong>: The <code>.keys()</code> method will behave the exact same way as the <code>.values()</code> method by returning the values of a Set within a new Iterator Object. The <code>.keys()</code> method is an alias for the <code>.values()</code> method for similarity with maps. You’ll see the <code>.keys()</code> method later in this lesson during the Maps section.</p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

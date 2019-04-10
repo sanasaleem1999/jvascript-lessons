@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012-2015 Adobe Systems Incorporated, All Rights Reserved.",HELP:"Hjælp",PRIVACY:"Beskyttelse af personlige oplysninger",TERMS:"Vilkår",COOKIES:"Cookies",PRIVACY_POLICY:"Beskyttelse af personlige oplysninger og cookies",TERMS_OF_USE:"Brugerbetingelser",WELCOME_MSG:"Brug Adobe Document Services, og få adgang til dine filer fra enhver enhed",LOAD_FAILURES:"Indlæsningsfejl",MODULES_NOT_LOADED:"Følgende moduler kunne ikke indlæses:<br/><br/><%= modules %>",SIGN_IN:"Log på",CREATE_ACCOUNT:"Opret konto",FORGOT_PASSWORD:"Har du problemer med at logge på?",EMAIL_VERIFICATION:"Bekræftelse på e-mail ",PDF_SERVICES:"  /  PDF-tjenester",ACCOUNT:"Konto",LINK_CREATIVE_CLOUD_ACCOUNT:"Sammenkæd Creative Cloud-konto...",LINK_DROPBOX_ACCOUNT:"Sammenkæd Dropbox-konto...",MANAGE_SUB:"Min plan...",USER_ACCOUNT:"Brugerkonto...",ASK_US_A_QUESTION:"Spørg os...",SUPPORT:"Support...",CHAT_WITH_US:"Chat med os...",ABOUT_APP:"Om Document Cloud...",SIGN_OUT:"Log af",SHOW_PROGRESS:"Vis status",PROGRESS_COMPLETE:"Status fuldført",REMOVE_HISTORY:"Fjern oversigt",OPERATION_IN_PROGRESS_DLG_TITLE:"Handling i gang",OPERATION_IN_PROGRESS_DLG_MSG:"Der er i øjeblikket en handling i gang. Hvis du fortsætter, annulleres denne. Vil du fortsætte?",QUOTA_LEGEND:"<%= using %> af <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Lagerpladsen overskredet (<a class='quota-display-learn-more'>Få mere at vide</a>)",ABOUT_DLG_TITLE:"Om Document Cloud",ABOUT_DLG_COPYRIGHT_PARA:"Copyright © 2012-2015 Adobe Systems Incorporated and its licensors. All Rights Reserved.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, the Adobe logo, and Acrobat are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. All other trademarks are the property of their respective owners.",ABOUT_DLG_PORTIONS_PARA:"Anvendelse af dele:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. All Rights Reserved.",ABOUT_DLG_IRIS_PARA:"OCR technology by Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. All rights reserved.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Meddelelser om tredjepart, vilkår og betingelser i forhold til software fra tredjepart er på <%= thirdPartyLink %> og inkorporeres heri vha. reference.",ABOUT_DLG_BUILD_NUMBER:"Build: <%= buildNum %>",NO_CONNECTION_TITLE:"Ingen internetforbindelse",NO_CONNECTION_MSG:"Funktionerne i dette område kræver internetforbindelse. Opret forbindelse til internettet, og prøv igen.",NETWORK_FAILURE:"Netværksforbindelsesfejl",NETWORK_DISCONNECTED:"Det lader til, at der ikke er netværksforbindelse. Reader har muligvis ikke alle funktioner, hvis der ikke er netværksforbindelse"});

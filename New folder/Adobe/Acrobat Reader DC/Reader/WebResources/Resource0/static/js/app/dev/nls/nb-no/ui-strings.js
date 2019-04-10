@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012-2015 Adobe Systems Incorporated, All Rights Reserved.",HELP:"Hjelp",PRIVACY:"Personvern",TERMS:"Vilkår",COOKIES:"Informasjonskapsler",PRIVACY_POLICY:"Personvern og informasjonskapsler",TERMS_OF_USE:"Bruksvilkår",WELCOME_MSG:"Bruk Adobe Document Services og få tilgang til filene dine fra alle enheter",LOAD_FAILURES:"Innlastingsfeil",MODULES_NOT_LOADED:"Følgende moduler kan ikke lastes inn:<br/><br/><%= modules %>",SIGN_IN:"Logg på",CREATE_ACCOUNT:"Opprett konto",FORGOT_PASSWORD:"Problemer med å logge på?",EMAIL_VERIFICATION:"Bekreftelse av e-postadresse",PDF_SERVICES:"  /  PDF-tjenester",ACCOUNT:"Konto",LINK_CREATIVE_CLOUD_ACCOUNT:"Koble til Creative Cloud-konto...",LINK_DROPBOX_ACCOUNT:"Koble til Dropbox-konto...",MANAGE_SUB:"Mitt abonnement...",USER_ACCOUNT:"Brukerkonto...",ASK_US_A_QUESTION:"Still et spørsmål...",SUPPORT:"Kundestøtte...",CHAT_WITH_US:"Chat med oss...",ABOUT_APP:"Om Document Cloud...",SIGN_OUT:"Logg av",SHOW_PROGRESS:"Vis fremdrift",PROGRESS_COMPLETE:"Fremdrift fullført",REMOVE_HISTORY:"Fjern historikk",OPERATION_IN_PROGRESS_DLG_TITLE:"Operasjon pågår",OPERATION_IN_PROGRESS_DLG_MSG:"Det pågår en operasjon. Operasjonen avbrytes hvis du fortsetter. Vil du fortsette?",QUOTA_LEGEND:"<%= using %> av <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Lagringsplass overskredet (<a class='quota-display-learn-more'>Finn ut mer</a>)",ABOUT_DLG_TITLE:"Om Document Cloud",ABOUT_DLG_COPYRIGHT_PARA:"Copyright © 2012-2015 Adobe Systems Incorporated and its licensors. All Rights Reserved.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, the Adobe logo, and Acrobat are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. All other trademarks are the property of their respective owners.",ABOUT_DLG_PORTIONS_PARA:"Deler brukt:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. All Rights Reserved.",ABOUT_DLG_IRIS_PARA:"OCR technology by Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. All rights reserved.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Tredjepartsmerknad, vilkår og betingelser som gjelder tredjeparts programvare, finner du på <%= thirdPartyLink %>, og disse er integrert med referanse i dette dokumentet.",ABOUT_DLG_BUILD_NUMBER:"Build: <%= buildNum %>",NO_CONNECTION_TITLE:"Ingen Internett-tilkobling",NO_CONNECTION_MSG:"Funksjonene i dette området krever Internett-tilkobling. Koble datamaskinen til Internett, og prøv på nytt.",NETWORK_FAILURE:"Feil ved nettverkstilkobling",NETWORK_DISCONNECTED:"Det ser ut som om det ikke er nettverkstilkobling. Det kan hende at ikke alle funksjonene i Reader er tilgjengelige på grunn av manglende nettverkstilkobling."});

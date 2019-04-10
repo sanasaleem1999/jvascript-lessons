@@ -1,0 +1,69 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.267 --> 00:00:02.603
+Chegamos mais ou menos
+à metade da aula
+
+00:00:02.636 --> 00:00:04.838
+e queremos falar
+sobre o seu progresso.
+
+00:00:04.872 --> 00:00:07.341
+Até agora vimos novas formas
+de declarar variáveis
+
+00:00:07.374 --> 00:00:10.143
+usando "let" e "const",
+como escrever templates literais
+
+00:00:10.177 --> 00:00:13.780
+para facilitar a interpolação, como
+desestruturar matrizes e objetos
+
+00:00:13.814 --> 00:00:16.283
+e formas
+de inicializar objetos.
+
+00:00:16.316 --> 00:00:17.384
+A esta altura,
+
+00:00:17.417 --> 00:00:20.354
+esperamos que você tenha percebido
+como essas melhorias ao JavaScript
+
+00:00:20.387 --> 00:00:22.990
+vão impactar sua forma de programar
+de agora em diante.
+
+00:00:23.023 --> 00:00:26.894
+No resto desta aula, focaremos
+na adição do "for... of loop",
+
+00:00:26.927 --> 00:00:29.329
+o parâmetro "rest"
+e o operador "spread".
+
+00:00:29.363 --> 00:00:30.898
+Porém, antes de prosseguir,
+
+00:00:30.931 --> 00:00:32.966
+há uma coisa
+que queremos mencionar:
+
+00:00:33.000 --> 00:00:34.168
+iteração.
+
+00:00:34.201 --> 00:00:37.905
+Iteração é um novo mecanismo
+para fazer loop em dados no ES6.
+
+00:00:37.938 --> 00:00:40.440
+Entender o que é iteração
+e como funciona
+
+00:00:40.474 --> 00:00:43.577
+será importante
+para completar esta aula.
+

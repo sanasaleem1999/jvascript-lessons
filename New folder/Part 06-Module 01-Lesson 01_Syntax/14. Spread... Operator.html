@@ -1,0 +1,274 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spread... Operator</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Syntax</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Harmony, ES6, ES2015....html">01. Harmony, ES6, ES2015...</a>
+    </li>
+    <li class="">
+      <a href="02. Let and Const.html">02. Let and Const</a>
+    </li>
+    <li class="">
+      <a href="03. Quiz Using Let and Const (1-1).html">03. Quiz: Using Let and Const (1-1)</a>
+    </li>
+    <li class="">
+      <a href="04. Template Literals.html">04. Template Literals</a>
+    </li>
+    <li class="">
+      <a href="05. Quiz Build an HTML Fragment (1-2).html">05. Quiz: Build an HTML Fragment (1-2)</a>
+    </li>
+    <li class="">
+      <a href="06. Destructuring.html">06. Destructuring</a>
+    </li>
+    <li class="">
+      <a href="07. Quiz Destructuring Arrays (1-3).html">07. Quiz: Destructuring Arrays (1-3)</a>
+    </li>
+    <li class="">
+      <a href="08. Object Literal Shorthand.html">08. Object Literal Shorthand</a>
+    </li>
+    <li class="">
+      <a href="09. Lesson 1 Checkup.html">09. Lesson 1 Checkup</a>
+    </li>
+    <li class="">
+      <a href="10. Iteration.html">10. Iteration</a>
+    </li>
+    <li class="">
+      <a href="11. Family of For Loops.html">11. Family of For Loops</a>
+    </li>
+    <li class="">
+      <a href="12. For...of Loop.html">12. For...of Loop</a>
+    </li>
+    <li class="">
+      <a href="13. Quiz Writing a For...of Loop (1-4).html">13. Quiz: Writing a For...of Loop (1-4)</a>
+    </li>
+    <li class="">
+      <a href="14. Spread... Operator.html">14. Spread... Operator</a>
+    </li>
+    <li class="">
+      <a href="15. Rest Parameter.html">15. ...Rest Parameter</a>
+    </li>
+    <li class="">
+      <a href="16. Quiz Using the Rest Parameter (1-5).html">16. Quiz: Using the Rest Parameter (1-5)</a>
+    </li>
+    <li class="">
+      <a href="17. Lesson 1 Summary.html">17. Lesson 1 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">14. Spread... Operator</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Time to switch gears for a moment and check out the spread operator!</p>
+<h2 id="spread-operator">Spread operator</h2>
+<p>The <strong>spread operator</strong>, written with three consecutive dots ( <code>...</code> ), is new in ES6 and gives you the ability to expand, or <em>spread</em>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Iterators" target="_blank">iterable objects</a> into multiple elements.</p>
+<p>Let’s take a look at a few examples to see how it works.</p>
+<pre><code class="js language-js">const books = ["Don Quixote", "The Hobbit", "Alice in Wonderland", "Tale of Two Cities"];
+console.log(...books);</code></pre>
+<blockquote>
+  <p><strong>Prints:</strong> Don Quixote The Hobbit Alice in Wonderland Tale of Two Cities</p>
+</blockquote>
+<pre><code class="js language-js">const primes = new Set([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
+console.log(...primes);</code></pre>
+<blockquote>
+  <p><strong>Prints:</strong> 2 3 5 7 11 13 17 19 23 29</p>
+</blockquote>
+<p>If you look at the output from the examples, notice that both the array and set have been expanded into their individual elements. So how is this useful?</p>
+<blockquote>
+  <p><strong>NOTE:</strong> Sets are a new built-in object in ES6 that we’ll cover in more detail in a future lesson.</p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h3 id="combining-arrays-with-concat">Combining arrays with concat</h3>
+<p>One example of when the spread operator can be useful is when combining arrays.</p>
+<p>If you’ve ever needed to combine multiple arrays, prior to the spread operator, you were forced to use the Array’s <code>concat()</code> method.</p>
+<pre><code class="js language-js">const fruits = ["apples", "bananas", "pears"];
+const vegetables = ["corn", "potatoes", "carrots"];
+const produce = fruits.concat(vegetables);
+console.log(produce);</code></pre>
+<blockquote>
+  <p><strong>Prints:</strong> ["apples", "bananas", "pears", "corn", "potatoes", "carrots"]</p>
+</blockquote>
+<p>This isn’t terrible, but wouldn’t it be nice if there was a shorthand way to write this code?</p>
+<p>For example, something like…</p>
+<blockquote>
+  <h3 id="⚠️-upcoming-const-warning-⚠️">⚠️ Upcoming <code>const</code> Warning ⚠️</h3>
+  <p>If you're following along by copy/pasting the code, then you've already declared the <code>produce</code> variable with the <code>const</code> keyword. The following code will try to redeclare <em>and</em> reassign the variable, so depending on how you're running the code, it might throw an error.</p>
+  <p>Remember that variables declared with  <code>const</code> cannot be redeclared or reassigned in the same scope.</p>
+</blockquote>
+<pre><code class="js language-js">const produce = [fruits, vegetables];
+console.log(produce);</code></pre>
+<blockquote>
+  <p><strong>Prints:</strong> [Array[3], Array[3]]</p>
+</blockquote>
+<p>Unfortunately, that doesn’t work.</p>
+<p>Instead of combining both arrays, this code actually adds the <code>fruits</code> array at the first index and the <code>vegetables</code> array at the second index of the <code>produce</code> array.</p>
+<p>How about trying the spread operator?</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+
+  <h4>Start Quiz:</h4>
+  <div>
+  <div class="nav nav-tabs nav-fill" role="tablist" id="question-tabs">
+    <a href="#197020-StudentMain-js" class="nav-item nav-link  active show" id="tab-197020-StudentMain-js" data-toggle="tab" role="tab"
+      aria-controls="197020-StudentMain-js" aria-selected="true">StudentMain.js</a>
+  </div>
+
+  <div class="tab-content" style="padding: 20px 0;" id="question-tab-contents">
+    <div class="tab-pane  active show" id="197020-StudentMain-js" aria-labelledby="tab-197020-StudentMain-js" role="tabpanel">
+      <pre><code></code>/*
+ * Instructions: Use the spread operator to combine the &#x60;fruits&#x60; and &#x60;vegetables&#x60; arrays into the &#x60;produce&#x60; array.
+ */
+
+const fruits &#x3D; [&quot;apples&quot;, &quot;bananas&quot;, &quot;pears&quot;];
+const vegetables &#x3D; [&quot;corn&quot;, &quot;potatoes&quot;, &quot;carrots&quot;];
+
+const produce &#x3D; [];
+
+console.log(produce);
+</code></pre>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

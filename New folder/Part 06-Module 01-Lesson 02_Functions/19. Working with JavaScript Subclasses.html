@@ -1,0 +1,271 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Working with JavaScript Subclasses</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Functions</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Updates to Functions.html">01. Updates to Functions</a>
+    </li>
+    <li class="">
+      <a href="02. Arrow Functions.html">02. Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="03. Using Arrow Functions.html">03. Using Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="04. Quiz Convert Function into an Arrow Function (2-1).html">04. Quiz: Convert Function into an Arrow Function (2-1)</a>
+    </li>
+    <li class="">
+      <a href="05. Arrow Functions Recap.html">05. Arrow Functions Recap</a>
+    </li>
+    <li class="">
+      <a href="06. Arrow Functions and the this Keyword.html">06. Arrow Functions and the &quot;this&quot; Keyword</a>
+    </li>
+    <li class="">
+      <a href="07. this and Regular Functions.html">07. &quot;this&quot; and Regular Functions</a>
+    </li>
+    <li class="">
+      <a href="08. this and Arrow Functions.html">08. &quot;this&quot; and Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="09. Default Function Parameters.html">09. Default Function Parameters</a>
+    </li>
+    <li class="">
+      <a href="10. Defaults and Destructuring.html">10. Defaults and Destructuring</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Using Default Function Parameters (2-2).html">11. Quiz: Using Default Function Parameters (2-2)</a>
+    </li>
+    <li class="">
+      <a href="12. Class Preview.html">12. Class Preview</a>
+    </li>
+    <li class="">
+      <a href="13. JavaScript&#x27;s Illusion of Classes.html">13. JavaScript&#x27;s Illusion of Classes</a>
+    </li>
+    <li class="">
+      <a href="14. JavaScript Classes.html">14. JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="15. Convert a Function to a Class.html">15. Convert a Function to a Class</a>
+    </li>
+    <li class="">
+      <a href="16. Working with JavaScript Classes.html">16. Working with JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="17. Super and Extends.html">17. Super and Extends</a>
+    </li>
+    <li class="">
+      <a href="18. Extending Classes from ES5 to ES6.html">18. Extending Classes from ES5 to ES6</a>
+    </li>
+    <li class="">
+      <a href="19. Working with JavaScript Subclasses.html">19. Working with JavaScript Subclasses</a>
+    </li>
+    <li class="">
+      <a href="20. Quiz Building Classes and Subclasses (2-3).html">20. Quiz: Building Classes and Subclasses (2-3)</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson 2 Summary.html">21. Lesson 2 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">19. Working with JavaScript Subclasses</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="working-with-subclasses">Working with subclasses</h2>
+<p>Like most of the new additions, there's a lot less setup code and it's a lot cleaner syntax to create a subclass using <code>class</code>, <code>super</code>, and <code>extends</code>.</p>
+<p>Just remember that, under the hood, the same connections are made between functions and prototypes.</p>
+<h3 id="super-must-be-called-before-this"><code>super</code> must be called before <code>this</code></h3>
+<p>In a subclass constructor function, before <code>this</code> can be used, a call to the super class must be made.</p>
+<pre><code class="js language-js">class Apple {}
+class GrannySmith extends Apple {
+  constructor(tartnessLevel, energy) {
+    this.tartnessLevel = tartnessLevel; // `this` before `super` will throw an error!
+    super(energy); 
+  }
+}</code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>instanceOf Quiz</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Take a look at the following code:</p>
+<pre><code class="js language-js">class Toy {}
+class Dragon extends Toy {}
+const dragon1 = new Dragon();</code></pre>
+<p>Given the code above, is the following statement true or false?</p>
+<pre><code class="js language-js">dragon1 instanceof Toy;</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1485284684918" name="261211" id="a1485284684918">
+        <label for="a1485284684918"><p>true</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485284732754" name="261211" id="a1485284732754">
+        <label for="a1485284732754"><p>false</p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Let's say that a <code>Toy</code> class exists and that a <code>Dragon</code> class extends the <code>Toy</code> class.</p>
+<p>What is the correct way to create a <code>Toy</code> object from inside the <code>Dragon</code> class's <code>constructor</code> method?</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1485284836854" name="261212" id="a1485284836854">
+        <label for="a1485284836854"><p>super();</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485284856342" name="261212" id="a1485284856342">
+        <label for="a1485284856342"><p>super.call(this);</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485284856945" name="261212" id="a1485284856945">
+        <label for="a1485284856945"><p>parent();</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485284857401" name="261212" id="a1485284857401">
+        <label for="a1485284857401"><p>Toy();</p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

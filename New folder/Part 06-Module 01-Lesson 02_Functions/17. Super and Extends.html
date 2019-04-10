@@ -1,0 +1,283 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Super and Extends</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Functions</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Updates to Functions.html">01. Updates to Functions</a>
+    </li>
+    <li class="">
+      <a href="02. Arrow Functions.html">02. Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="03. Using Arrow Functions.html">03. Using Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="04. Quiz Convert Function into an Arrow Function (2-1).html">04. Quiz: Convert Function into an Arrow Function (2-1)</a>
+    </li>
+    <li class="">
+      <a href="05. Arrow Functions Recap.html">05. Arrow Functions Recap</a>
+    </li>
+    <li class="">
+      <a href="06. Arrow Functions and the this Keyword.html">06. Arrow Functions and the &quot;this&quot; Keyword</a>
+    </li>
+    <li class="">
+      <a href="07. this and Regular Functions.html">07. &quot;this&quot; and Regular Functions</a>
+    </li>
+    <li class="">
+      <a href="08. this and Arrow Functions.html">08. &quot;this&quot; and Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="09. Default Function Parameters.html">09. Default Function Parameters</a>
+    </li>
+    <li class="">
+      <a href="10. Defaults and Destructuring.html">10. Defaults and Destructuring</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Using Default Function Parameters (2-2).html">11. Quiz: Using Default Function Parameters (2-2)</a>
+    </li>
+    <li class="">
+      <a href="12. Class Preview.html">12. Class Preview</a>
+    </li>
+    <li class="">
+      <a href="13. JavaScript&#x27;s Illusion of Classes.html">13. JavaScript&#x27;s Illusion of Classes</a>
+    </li>
+    <li class="">
+      <a href="14. JavaScript Classes.html">14. JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="15. Convert a Function to a Class.html">15. Convert a Function to a Class</a>
+    </li>
+    <li class="">
+      <a href="16. Working with JavaScript Classes.html">16. Working with JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="17. Super and Extends.html">17. Super and Extends</a>
+    </li>
+    <li class="">
+      <a href="18. Extending Classes from ES5 to ES6.html">18. Extending Classes from ES5 to ES6</a>
+    </li>
+    <li class="">
+      <a href="19. Working with JavaScript Subclasses.html">19. Working with JavaScript Subclasses</a>
+    </li>
+    <li class="">
+      <a href="20. Quiz Building Classes and Subclasses (2-3).html">20. Quiz: Building Classes and Subclasses (2-3)</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson 2 Summary.html">21. Lesson 2 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">17. Super and Extends</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="subclasses-with-es6">Subclasses with ES6</h2>
+<p>Now that we've looked at creating classes in JavaScript. Let's use the new <code>super</code> and <code>extends</code> keywords to extend a class.</p>
+<pre><code class="js language-js">class Tree {
+  constructor(size = '10', leaves = {spring: 'green', summer: 'green', fall: 'orange', winter: null}) {
+    this.size = size;
+    this.leaves = leaves;
+    this.leafColor = null;
+  }
+
+  changeSeason(season) {
+    this.leafColor = this.leaves[season];
+    if (season === 'spring') {
+      this.size += 1;
+    }
+  }
+}
+
+class Maple extends Tree {
+  constructor(syrupQty = 15, size, leaves) {
+    super(size, leaves);
+    this.syrupQty = syrupQty;
+  }
+
+  changeSeason(season) {
+    super.changeSeason(season);
+    if (season === 'spring') {
+      this.syrupQty += 1;
+    }
+  }
+
+  gatherSyrup() {
+    this.syrupQty -= 3;
+  }
+}
+
+const myMaple = new Maple(15, 5);
+myMaple.changeSeason('fall');
+myMaple.gatherSyrup();
+myMaple.changeSeason('spring');</code></pre>
+<p>Both <code>Tree</code> and <code>Maple</code> are JavaScript classes. The <code>Maple</code> class is a "subclass" of <code>Tree</code> and uses the <code>extends</code> keyword to set itself as a "subclass". To get from the "subclass" to the parent class, the <code>super</code> keyword is used. Did you notice that <code>super</code> was used in two different ways? In <code>Maple</code>'s constructor method, <code>super</code> is used as a function. In <code>Maple</code>'s <code>changeSeason()</code> method, <code>super</code> is used as an object!</p>
+<h2 id="compared-to-es5-subclasses">Compared to ES5 subclasses</h2>
+<p>Let's see this same functionality, but written in ES5 code:</p>
+<pre><code class="js language-js">function Tree(size, leaves) {
+  this.size = (typeof size === "undefined")? 10 : size;
+  const defaultLeaves = {spring: 'green', summer: 'green', fall: 'orange', winter: null};
+  this.leaves = (typeof leaves === "undefined")?  defaultLeaves : leaves;
+  this.leafColor;
+}
+
+Tree.prototype.changeSeason = function(season) {
+  this.leafColor = this.leaves[season];
+  if (season === 'spring') {
+    this.size += 1;
+  }
+}
+
+function Maple (syrupQty, size, leaves) {
+  Tree.call(this, size, leaves);
+  this.syrupQty = (typeof syrupQty === "undefined")? 15 : syrupQty;
+}
+
+Maple.prototype = Object.create(Tree.prototype);
+Maple.prototype.constructor = Maple;
+
+Maple.prototype.changeSeason = function(season) {
+  Tree.prototype.changeSeason.call(this, season);
+  if (season === 'spring') {
+    this.syrupQty += 1;
+  }
+}
+
+Maple.prototype.gatherSyrup = function() {
+  this.syrupQty -= 3;
+}
+
+const myMaple = new Maple(15, 5);
+myMaple.changeSeason('fall');
+myMaple.gatherSyrup();
+myMaple.changeSeason('spring');</code></pre>
+<p>Both this code and the class-style code above achieve the same functionality.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

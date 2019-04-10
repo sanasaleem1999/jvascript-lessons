@@ -1,0 +1,97 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.607
+So, what is iteration?
+
+00:00:02.607 --> 00:00:06.785
+Probably the best way to describe it is by looking at a normal for loop.
+
+00:00:06.785 --> 00:00:08.108
+When you write a for loop,
+
+00:00:08.108 --> 00:00:10.285
+you provide the loop with a variable.
+
+00:00:10.285 --> 00:00:13.290
+This variable is typically the letter I because it's being
+
+00:00:13.290 --> 00:00:17.220
+used as an iterator to keep track of your place in the loop.
+
+00:00:17.220 --> 00:00:19.815
+When you're looping over something like an array,
+
+00:00:19.815 --> 00:00:22.144
+this iterator works like an index,
+
+00:00:22.144 --> 00:00:26.005
+letting you access each item in the array one after the other.
+
+00:00:26.005 --> 00:00:27.930
+This process of getting the next item,
+
+00:00:27.930 --> 00:00:29.585
+one after the other, is iteration,
+
+00:00:29.585 --> 00:00:31.565
+and we've been using it for a long time.
+
+00:00:31.565 --> 00:00:33.115
+So, why even bring this up?
+
+00:00:33.115 --> 00:00:35.928
+It sounds like iteration has always been a part of Javascript.
+
+00:00:35.928 --> 00:00:37.920
+So, what's new in ES6?
+
+00:00:37.920 --> 00:00:39.960
+Well, there are a couple of things.
+
+00:00:39.960 --> 00:00:42.240
+First, there's a new iterable interface that
+
+00:00:42.240 --> 00:00:45.190
+allows us to customize how objects are iterated.
+
+00:00:45.190 --> 00:00:47.200
+So, basically how they're looped over.
+
+00:00:47.200 --> 00:00:49.580
+We'll look at this more closely in lesson three,
+
+00:00:49.580 --> 00:00:51.935
+when we talk about symbols.
+
+00:00:51.935 --> 00:00:54.260
+The second thing is there's a new loop,
+
+00:00:54.260 --> 00:00:56.175
+it's called the for-of loop,
+
+00:00:56.175 --> 00:01:00.180
+which loops exclusively over iterable objects.
+
+00:01:00.180 --> 00:01:01.845
+Now, when I say iterable objects,
+
+00:01:01.845 --> 00:01:05.940
+I just mean an object that has implemented this new iterable interface.
+
+00:01:05.940 --> 00:01:09.000
+See here the for and the of.
+
+00:01:09.000 --> 00:01:10.770
+Now, this might sound a little bit fuzzy.
+
+00:01:10.770 --> 00:01:13.050
+So let's actually take a step back and look at
+
+00:01:13.050 --> 00:01:15.570
+some code examples of traditional for loops,
+
+00:01:15.570 --> 00:01:21.370
+and then see how the new for-of loop really stands out as your best option for looping.
+

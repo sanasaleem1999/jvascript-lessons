@@ -1,0 +1,286 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>&quot;this&quot; and Regular Functions</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Functions</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Updates to Functions.html">01. Updates to Functions</a>
+    </li>
+    <li class="">
+      <a href="02. Arrow Functions.html">02. Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="03. Using Arrow Functions.html">03. Using Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="04. Quiz Convert Function into an Arrow Function (2-1).html">04. Quiz: Convert Function into an Arrow Function (2-1)</a>
+    </li>
+    <li class="">
+      <a href="05. Arrow Functions Recap.html">05. Arrow Functions Recap</a>
+    </li>
+    <li class="">
+      <a href="06. Arrow Functions and the this Keyword.html">06. Arrow Functions and the &quot;this&quot; Keyword</a>
+    </li>
+    <li class="">
+      <a href="07. this and Regular Functions.html">07. &quot;this&quot; and Regular Functions</a>
+    </li>
+    <li class="">
+      <a href="08. this and Arrow Functions.html">08. &quot;this&quot; and Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="09. Default Function Parameters.html">09. Default Function Parameters</a>
+    </li>
+    <li class="">
+      <a href="10. Defaults and Destructuring.html">10. Defaults and Destructuring</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Using Default Function Parameters (2-2).html">11. Quiz: Using Default Function Parameters (2-2)</a>
+    </li>
+    <li class="">
+      <a href="12. Class Preview.html">12. Class Preview</a>
+    </li>
+    <li class="">
+      <a href="13. JavaScript&#x27;s Illusion of Classes.html">13. JavaScript&#x27;s Illusion of Classes</a>
+    </li>
+    <li class="">
+      <a href="14. JavaScript Classes.html">14. JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="15. Convert a Function to a Class.html">15. Convert a Function to a Class</a>
+    </li>
+    <li class="">
+      <a href="16. Working with JavaScript Classes.html">16. Working with JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="17. Super and Extends.html">17. Super and Extends</a>
+    </li>
+    <li class="">
+      <a href="18. Extending Classes from ES5 to ES6.html">18. Extending Classes from ES5 to ES6</a>
+    </li>
+    <li class="">
+      <a href="19. Working with JavaScript Subclasses.html">19. Working with JavaScript Subclasses</a>
+    </li>
+    <li class="">
+      <a href="20. Quiz Building Classes and Subclasses (2-3).html">20. Quiz: Building Classes and Subclasses (2-3)</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson 2 Summary.html">21. Lesson 2 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">07. "this" and Regular Functions</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>To get a handle on how <code>this</code> works differently with arrow functions, let's do a quick recap of how <code>this</code> works in a standard function. If you have a solid grasp of how <code>this</code> works already, feel free to <a href="https://classroom.udacity.com/courses/ud356/lessons/3925704a-be38-4b70-8c8b-a4a812b6a309/concepts/32f53f68-4b31-40fb-b136-4eda28b8ff57" target="_blank">jump over this section</a>.</p>
+<p>The value of the <code>this</code> keyword is based completely on how its function (or method) is called. <code>this</code> could be any of the following:</p>
+<hr />
+<h3 id="1-a-new-object">1. A new object</h3>
+<p>If the function is called with <code>new</code>:</p>
+<pre><code class="js language-js">const mySundae = new Sundae('Chocolate', ['Sprinkles', 'Hot Fudge']); </code></pre>
+<p>In the code above, the value of <code>this</code> inside the <code>Sundae</code> constructor function is a new object because it was called with <code>new</code>.</p>
+<hr />
+<h3 id="2-a-specified-object">2. A specified object</h3>
+<p>If the function is invoked with <code>call</code>/<code>apply</code>:</p>
+<pre><code class="js language-js">const result = obj1.printName.call(obj2);</code></pre>
+<p>In the code above, the value of <code>this</code> inside <code>printName()</code> will refer to <code>obj2</code> since the first parameter of <code>call()</code> is to explicitly set what <code>this</code> refers to.</p>
+<hr />
+<h3 id="3-a-context-object">3. A context object</h3>
+<p>If the function is a method of an object:</p>
+<pre><code class="js language-js">data.teleport();</code></pre>
+<p>In the code above, the value of <code>this</code> inside <code>teleport()</code> will refer to <code>data</code>.</p>
+<hr />
+<h3 id="4-the-global-object-or-undefined">4. The global object or undefined</h3>
+<p>If the function is called with no context:</p>
+<pre><code class="js language-js">teleport();</code></pre>
+<p>In the code above, the value of <code>this</code> inside <code>teleport()</code> is either the global object or, if in strict mode, it's <code>undefined</code>.</p>
+<hr />
+<blockquote>
+  <p>**TIP: ** <code>this</code> in JavaScript is a complicated topic. We just did a quick overview, but for an in-depth look at how <code>this</code> is determined, check out <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md" target="_blank">this All Makes Sense Now!</a> from Kyle Simpson's book series <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/README.md" target="_blank">You Don't Know JS</a>. </p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p><code>this</code> and Regular Functions 1</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>What is the value of <code>this</code> inside the <code>Train</code> constructor function below?</p>
+<pre><code class="js language-js">const redTrain = new Train('red');</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1485273574059" name="261144" id="a1485273574059">
+        <label for="a1485273574059"><p>the window object</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485273623417" name="261144" id="a1485273623417">
+        <label for="a1485273623417"><p>a new object</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485273624416" name="261144" id="a1485273624416">
+        <label for="a1485273624416"><p>undefined</p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p><code>this</code> and Regular Functions 2</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>What is the value of <code>this</code> inside the <code>increaseSpeed()</code> function below?</p>
+<pre><code class="js language-js">const redTrain = new Train('red');
+redTrain.increaseSpeed(25);</code></pre></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1485273749391" name="261145" id="a1485273749391">
+        <label for="a1485273749391"><p>the window object</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485273786245" name="261145" id="a1485273786245">
+        <label for="a1485273786245"><p>a new object</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485273787022" name="261145" id="a1485273787022">
+        <label for="a1485273787022"><p>the redTrain object</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1485273787846" name="261145" id="a1485273787846">
+        <label for="a1485273787846"><p>undefined</p></label>
+      </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

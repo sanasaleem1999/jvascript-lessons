@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.936
+Você provavelmente já viu
+ou teve que usar
+
+00:00:02.969 --> 00:00:04.938
+a misteriosa
+palavra-chave "this".
+
+00:00:04.972 --> 00:00:07.674
+Ela pode ser meio confusa,
+porque é um valor dinâmico
+
+00:00:07.708 --> 00:00:10.711
+que pode ser diferente dependendo
+de como a função é chamada.
+
+00:00:11.144 --> 00:00:12.179
+Vou dar uma prévia:
+
+00:00:12.212 --> 00:00:14.715
+com funções normais,
+o valor de "this"
+
+00:00:14.748 --> 00:00:16.783
+depende de como
+a função é chamada.
+
+00:00:16.817 --> 00:00:18.018
+Já com as arrow functions,
+
+00:00:18.051 --> 00:00:21.488
+depende de onde a função
+está localizada no código.
+
+00:00:22.022 --> 00:00:25.259
+Vamos rever como funciona
+a palavra-chave "this" geralmente
+
+00:00:25.292 --> 00:00:27.494
+e depois como ela funciona
+nas arrow functions.
+

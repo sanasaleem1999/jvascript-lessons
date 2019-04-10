@@ -1,0 +1,111 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.601 --> 00:00:03.604
+Símbolos são a última adição à lista
+de tipos de dados primitivos
+
+00:00:03.637 --> 00:00:06.039
+disponíveis no JavaScript.
+
+00:00:06.073 --> 00:00:08.242
+Antes disso, o JavaScript
+tinha apenas: números,
+
+00:00:08.275 --> 00:00:10.110
+strings, booleanos,
+
+00:00:10.143 --> 00:00:12.546
+nulo e indefinido
+como seus primitivos.
+
+00:00:12.579 --> 00:00:14.348
+Agora símbolos
+são parte disso.
+
+00:00:14.381 --> 00:00:16.216
+James, o que é um símbolo?
+
+00:00:16.250 --> 00:00:19.019
+Um símbolo
+é um identificador único.
+
+00:00:19.052 --> 00:00:20.354
+É utilizado com frequência
+
+00:00:20.387 --> 00:00:22.756
+para identificar
+propriedades de um objeto.
+
+00:00:22.990 --> 00:00:26.059
+Por exemplo, vamos presumir
+que esta tigela seja um objeto.
+
+00:00:26.093 --> 00:00:28.095
+Richard, pode me dar
+umas frutas?
+
+00:00:30.097 --> 00:00:32.165
+Certo.
+Colocamos esta maçã,
+
+00:00:32.199 --> 00:00:35.002
+esta laranja e esta banana
+na tigela.
+
+00:00:35.035 --> 00:00:38.172
+Lembre-se de que estas frutas
+também são objetos,
+
+00:00:38.205 --> 00:00:40.507
+mas agora são propriedades
+da tigela.
+
+00:00:40.541 --> 00:00:42.276
+Agora as coisas
+ficam interessantes.
+
+00:00:42.309 --> 00:00:44.211
+Pode me dar outra banana?
+
+00:00:45.012 --> 00:00:47.381
+Se eu colocar esta banana
+na tigela,
+
+00:00:47.414 --> 00:00:49.416
+você consegue ver o problema?
+
+00:00:49.449 --> 00:00:52.152
+Richard, me dá uma banana
+da tigela.
+
+00:00:53.287 --> 00:00:56.156
+-Qual delas?
+-Exatamente.
+
+00:00:56.190 --> 00:01:00.327
+Preciso de uma forma de diferenciar
+esta banana desta aqui.
+
+00:01:00.360 --> 00:01:04.598
+Em programação, posso representar
+esta banana como "banana1"
+
+00:01:04.665 --> 00:01:06.767
+e esta banana como "banana2",
+
+00:01:07.000 --> 00:01:09.469
+mas e se eu continuar
+colocando bananas na tigela?
+
+00:01:10.737 --> 00:01:13.006
+Acho que deu para entender.
+
+00:01:13.040 --> 00:01:15.442
+Felizmente, com a adição
+de símbolos no ES6,
+
+00:01:15.475 --> 00:01:17.144
+temos uma solução.
+

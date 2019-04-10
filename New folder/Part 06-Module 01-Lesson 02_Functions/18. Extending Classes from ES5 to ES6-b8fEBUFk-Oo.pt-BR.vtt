@@ -1,0 +1,117 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:02.433
+Vamos esconder o funcionamento
+destas classes
+
+00:00:02.467 --> 00:00:05.100
+para comparar
+como foram construídas.
+
+00:00:09.200 --> 00:00:12.467
+Lembre que há um novo método
+chamado "constructor",
+
+00:00:12.500 --> 00:00:15.167
+que roda sempre que a classe
+é chamada.
+
+00:00:15.200 --> 00:00:18.900
+Ele está fazendo a mesma coisa
+que este método "Tree" aqui.
+
+00:00:19.167 --> 00:00:22.500
+Lembre que o nome de um método
+dentro de uma definição de classe
+
+00:00:22.533 --> 00:00:26.167
+é o mesmo que adicionar o método
+ao protótipo.
+
+00:00:26.767 --> 00:00:29.800
+É o que acontece nesta classe base,
+que é bem parecida.
+
+00:00:29.833 --> 00:00:34.333
+A maior diferença é ao estender
+a classe base com uma subclasse.
+
+00:00:34.367 --> 00:00:39.133
+Com o código ES5, precisávamos
+criar outra função "constructor".
+
+00:00:39.367 --> 00:00:41.800
+Depois atribuiríamos
+a função "prototype"
+
+00:00:41.833 --> 00:00:44.367
+à classe-base "prototype".
+
+00:00:44.767 --> 00:00:47.733
+Já que reescrevemos
+o objeto protótipo original,
+
+00:00:47.767 --> 00:00:50.800
+precisamos recriar a conexão
+entre a propriedade constructor
+
+00:00:50.833 --> 00:00:53.300
+e a função constructor
+original.
+
+00:00:53.333 --> 00:00:57.567
+Então voltamos a adicionar métodos
+ao objeto protótipo.
+
+00:00:58.567 --> 00:01:01.967
+Compare os códigos necessários
+para conectar essas funções
+
+00:01:02.000 --> 00:01:03.700
+e ligá-las ao protótipo
+
+00:01:03.733 --> 00:01:05.467
+com este código aqui.
+
+00:01:05.500 --> 00:01:07.333
+É apenas
+uma definição de classe,
+
+00:01:07.367 --> 00:01:10.667
+mas usa a palavra-chave "extends"
+para conectar a classe "Maple"
+
+00:01:10.700 --> 00:01:12.800
+à classe base, que é "Tree".
+
+00:01:12.833 --> 00:01:14.433
+Bem melhor, não é?
+
+00:01:14.467 --> 00:01:16.567
+Também é mais fácil chamar
+a classe base
+
+00:01:16.600 --> 00:01:18.467
+a partir da subclasse.
+
+00:01:18.500 --> 00:01:21.900
+O código ES6 usa
+a nova palavra-chave "super".
+
+00:01:21.933 --> 00:01:24.533
+Precisávamos usar ".call"
+no arquivo do ES5
+
+00:01:24.567 --> 00:01:27.700
+e passar isso
+como primeiro argumento.
+
+00:01:37.833 --> 00:01:39.367
+Chamar um método "prototype"
+
+00:01:39.400 --> 00:01:42.300
+também demanda menos código
+no novo formato de classe.
+

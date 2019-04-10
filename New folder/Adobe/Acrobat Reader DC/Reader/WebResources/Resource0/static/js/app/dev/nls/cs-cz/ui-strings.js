@@ -1,0 +1,19 @@
+/*************************************************************************
+* ADOBE CONFIDENTIAL
+* ___________________
+*
+*  Copyright 2013 Adobe Systems Incorporated
+*  All Rights Reserved.
+*
+* NOTICE:  All information contained herein is, and remains
+* the property of Adobe Systems Incorporated and its suppliers,
+* if any.  The intellectual and technical concepts contained
+* herein are proprietary to Adobe Systems Incorporated and its
+* suppliers and are protected by all applicable intellectual property laws,
+* including trade secret and or copyright laws.
+* Dissemination of this information or reproduction of this material
+* is strictly forbidden unless prior written permission is obtained
+* from Adobe Systems Incorporated.
+**************************************************************************/
+
+define({COPYRIGHT:"©2012-2015 Adobe Systems Incorporated, All Rights Reserved.",HELP:"Nápověda",PRIVACY:"Utajení",TERMS:"Smluvní podmínky",COOKIES:"Soubory cookie",PRIVACY_POLICY:"Ochrana soukromí a soubory cookie",TERMS_OF_USE:"Podmínky použití",WELCOME_MSG:"Využívejte služby Adobe Document a získejte přístup ke svým souborům z jakéhokoli zařízení",LOAD_FAILURES:"Selhání načítání",MODULES_NOT_LOADED:"Nepodařilo se načíst následující moduly:<br/><br/><%= moduly %>",SIGN_IN:"Přihlásit se",CREATE_ACCOUNT:"Vytvořit účet",FORGOT_PASSWORD:"Problémy s přihlášením?",EMAIL_VERIFICATION:"Ověření e-mailu",PDF_SERVICES:"Služby   /  PDF",ACCOUNT:"Účet",LINK_CREATIVE_CLOUD_ACCOUNT:"Připojit účet služby Creative Cloud...",LINK_DROPBOX_ACCOUNT:"Připojit účet služby Dropbox...",MANAGE_SUB:"Můj tarif...",USER_ACCOUNT:"Uživatelský účet...",ASK_US_A_QUESTION:"Položte otázku...",SUPPORT:"Podpora...",CHAT_WITH_US:"Povídejte si s námi...",ABOUT_APP:"O službě Document Cloud...",SIGN_OUT:"Odhlásit se",SHOW_PROGRESS:"Zobrazit postup",PROGRESS_COMPLETE:"Postup dokončen",REMOVE_HISTORY:"Odstranit historii",OPERATION_IN_PROGRESS_DLG_TITLE:"Probíhá operace",OPERATION_IN_PROGRESS_DLG_MSG:"Aktuálně probíhá operace. Budete-li pokračovat, tuto operaci zrušíte. Chcete pokračovat?",QUOTA_LEGEND:"<%= using %> ze <%= allotment %>",STORAGE_EXCEEDED_LEARN_MORE:"Překročeno množství dat (<a class='quota-display-learn-more'>Další informace</a>)",ABOUT_DLG_TITLE:"O službě Document Cloud",ABOUT_DLG_COPYRIGHT_PARA:"Copyright © 2012-2015 Adobe Systems Incorporated and its licensors. All Rights Reserved.",ABOUT_DLG_TRADEMARK_PARA:"Adobe, the Adobe logo, and Acrobat are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries. All other trademarks are the property of their respective owners.",ABOUT_DLG_PORTIONS_PARA:"Části využívají:",ABOUT_DLG_MICROSOFT_PARA:"Microsoft Windows Media Technologies. Copyright © 1999-2002, 2006 Microsoft Corporation. Všechna práva vyhrazena.",ABOUT_DLG_IRIS_PARA:"Technologii OCR vyvinula společnost Image Recognition Integrated Systems S.A. Copyright © 1987 - 2012, I.R.I.S. S.A. Všechna práva vyhrazena.",ABOUT_DLG_SOLID_PARA:"Copyright © 2003-2011 Solid Documents, LLC",ABOUT_DLG_THIRD_PARTY_PARA:"Upozornění třetích stran a licenční podmínky vztahující se k softwaru třetích stran najdete <%= thirdPartyLink %> a zde jsou proto jen odkazovány.",ABOUT_DLG_BUILD_NUMBER:"Sestavení: <%= buildNum %>",NO_CONNECTION_TITLE:"Žádné připojení k internetu",NO_CONNECTION_MSG:"Funkce v této oblasti vyžadují připojení k internetu. Připojte počítač k internetu a zkuste to znovu.",NETWORK_FAILURE:"Selhání síťového připojení",NETWORK_DISCONNECTED:"Zdá se, že nemáte síťové připojení. Aplikace Reader nemusí být bez síťového připojení plně funkční."});

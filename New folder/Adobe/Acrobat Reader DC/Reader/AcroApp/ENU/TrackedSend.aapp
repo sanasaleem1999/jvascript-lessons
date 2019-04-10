@@ -1,0 +1,11 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Send &amp; Track" description="Send documents, track views and downloads" id="SendAppFull" majorVersion="1" minorVersion="0">
+	<Commands>
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="SendPDFView" type="Custom"/>
+			</ContentView>
+		</Layout>
+	</Layouts>
+</Application>

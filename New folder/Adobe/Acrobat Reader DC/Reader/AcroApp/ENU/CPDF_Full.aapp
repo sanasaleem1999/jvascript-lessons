@@ -1,0 +1,11 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Create PDF" description="Create a PDF from any format" id="CPDFAppFull" majorVersion="1" minorVersion="0">
+	<Commands>
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="CreatePDFView" type="Custom"/>
+			</ContentView>
+		</Layout>
+	</Layouts>
+</Application>

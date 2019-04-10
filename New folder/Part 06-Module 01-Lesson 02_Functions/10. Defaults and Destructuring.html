@@ -1,0 +1,361 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Defaults and Destructuring</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Functions</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Updates to Functions.html">01. Updates to Functions</a>
+    </li>
+    <li class="">
+      <a href="02. Arrow Functions.html">02. Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="03. Using Arrow Functions.html">03. Using Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="04. Quiz Convert Function into an Arrow Function (2-1).html">04. Quiz: Convert Function into an Arrow Function (2-1)</a>
+    </li>
+    <li class="">
+      <a href="05. Arrow Functions Recap.html">05. Arrow Functions Recap</a>
+    </li>
+    <li class="">
+      <a href="06. Arrow Functions and the this Keyword.html">06. Arrow Functions and the &quot;this&quot; Keyword</a>
+    </li>
+    <li class="">
+      <a href="07. this and Regular Functions.html">07. &quot;this&quot; and Regular Functions</a>
+    </li>
+    <li class="">
+      <a href="08. this and Arrow Functions.html">08. &quot;this&quot; and Arrow Functions</a>
+    </li>
+    <li class="">
+      <a href="09. Default Function Parameters.html">09. Default Function Parameters</a>
+    </li>
+    <li class="">
+      <a href="10. Defaults and Destructuring.html">10. Defaults and Destructuring</a>
+    </li>
+    <li class="">
+      <a href="11. Quiz Using Default Function Parameters (2-2).html">11. Quiz: Using Default Function Parameters (2-2)</a>
+    </li>
+    <li class="">
+      <a href="12. Class Preview.html">12. Class Preview</a>
+    </li>
+    <li class="">
+      <a href="13. JavaScript&#x27;s Illusion of Classes.html">13. JavaScript&#x27;s Illusion of Classes</a>
+    </li>
+    <li class="">
+      <a href="14. JavaScript Classes.html">14. JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="15. Convert a Function to a Class.html">15. Convert a Function to a Class</a>
+    </li>
+    <li class="">
+      <a href="16. Working with JavaScript Classes.html">16. Working with JavaScript Classes</a>
+    </li>
+    <li class="">
+      <a href="17. Super and Extends.html">17. Super and Extends</a>
+    </li>
+    <li class="">
+      <a href="18. Extending Classes from ES5 to ES6.html">18. Extending Classes from ES5 to ES6</a>
+    </li>
+    <li class="">
+      <a href="19. Working with JavaScript Subclasses.html">19. Working with JavaScript Subclasses</a>
+    </li>
+    <li class="">
+      <a href="20. Quiz Building Classes and Subclasses (2-3).html">20. Quiz: Building Classes and Subclasses (2-3)</a>
+    </li>
+    <li class="">
+      <a href="21. Lesson 2 Summary.html">21. Lesson 2 Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">10. Defaults and Destructuring</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="defaults-and-destructuring-arrays">Defaults and destructuring arrays</h2>
+<p>You can combine default function parameters with <a href="https://classroom.udacity.com/courses/ud356/lessons/42383e89-ac6a-491a-b7d0-198851287bbe/concepts/7c7be588-31e9-4c62-9dad-ecf23f943b19" target="_blank">destructuring</a> to create some pretty powerful functions!</p>
+<pre><code class="js language-js">function createGrid([width = 5, height = 5]) {
+  return `Generates a ${width} x ${height} grid`;
+}
+
+createGrid([]); // Generates a 5 x 5 grid
+createGrid([2]); // Generates a 2 x 5 grid
+createGrid([2, 3]); // Generates a 2 x 3 grid
+createGrid([undefined, 3]); // Generates a 5 x 3 grid</code></pre>
+<blockquote>
+  <p><strong>Returns:</strong><br><br />
+  Generates a 5 x 5 grid<br><br />
+  Generates a 2 x 5 grid<br><br />
+  Generates a 2 x 3 grid<br><br />
+  Generates a 5 x 3 grid</p>
+</blockquote>
+<p>The <code>createGrid()</code> function expects an array to be passed to it. It uses destructuring to set the first item in the array to the <code>width</code> and the second item to be the <code>height</code>. If the array is empty or if it has only one item in it, then the default parameters kick in and give the missing parameters a default value of <code>5</code>.</p>
+<p>There is a problem with this though, the following code will not work:</p>
+<pre><code class="js language-js">createGrid(); // throws an error</code></pre>
+<blockquote>
+  <p><strong>Uncaught TypeError:</strong> Cannot read property 'Symbol(Symbol.iterator)' of undefined</p>
+</blockquote>
+<p>This throws an error because <code>createGrid()</code> expects an array to be passed in that it will then destructure. Since the function was called without passing an array, it breaks. But, we can use default function parameters for this!</p>
+<pre><code class="js language-js">function createGrid([width = 5, height = 5] = []) {
+  return `Generates a ${width} x ${height} grid`;
+}</code></pre>
+<p>See that new <code>= []</code> in the function's parameter? If <code>createGrid()</code> is called without any argument then it will use this default empty array. And since the array is empty, there's nothing to destructure into <code>width</code> and <code>height</code>, so their default values will apply! So by adding <code>= []</code> to give the entire parameter a default, the following code will now work:</p>
+<pre><code class="js language-js">createGrid(); // Generates a 5 x 5 grid</code></pre>
+<blockquote>
+  <p><strong>Returns:</strong> Generates a 5 x 5 grid</p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Destructuring with Array Defaults Parameter</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Take a look at the following code:</p>
+<pre><code class="js language-js">function houseDescriptor([houseColor = 'green', shutterColors = ['red']]) {
+  return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+}</code></pre>
+<p>Which of the following choices will run without throwing an error?</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1485277080219" name="261164" id="a1485277080219">
+      <label for="a1485277080219"><p>houseDescriptor('red', ['white', 'gray', 'pink']);</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485278612080" name="261164" id="a1485278612080">
+      <label for="a1485278612080"><p>houseDescriptor(['green', ['white', 'gray', 'pink']]);</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485278612753" name="261164" id="a1485278612753">
+      <label for="a1485278612753"><p>houseDescriptor(['blue', 'purple']);</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485278613201" name="261164" id="a1485278613201">
+      <label for="a1485278613201"><p>houseDescriptor(['green']);</p></label>
+    </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="defaults-and-destructuring-objects">Defaults and destructuring objects</h2>
+<p>Just like array destructuring with array defaults, a function can have an object be a default parameter and use object destructuring:</p>
+<pre><code class="js language-js">function createSundae({scoops = 1, toppings = ['Hot Fudge']}) {
+  const scoopText = scoops === 1 ? 'scoop' : 'scoops';
+  return `Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`;
+}
+
+createSundae({}); // Your sundae has 1 scoop with Hot Fudge toppings.
+createSundae({scoops: 2}); // Your sundae has 2 scoops with Hot Fudge toppings.
+createSundae({scoops: 2, toppings: ['Sprinkles']}); // Your sundae has 2 scoops with Sprinkles toppings.
+createSundae({toppings: ['Cookie Dough']}); // Your sundae has 1 scoop with Cookie Dough toppings.</code></pre>
+<blockquote>
+  <p><strong>Returns:</strong><br><br />
+  Your sundae has 1 scoop with Hot Fudge toppings.<br><br />
+  Your sundae has 2 scoops with Hot Fudge toppings.<br><br />
+  Your sundae has 2 scoops with Sprinkles toppings.<br><br />
+  Your sundae has 1 scoop with Cookie Dough toppings.</p>
+</blockquote>
+<p>Just like the array example before, if you try calling the function without any arguments it won't work:</p>
+<pre><code class="js language-js">createSundae(); // throws an error</code></pre>
+<blockquote>
+  <p><strong>Uncaught TypeError:</strong> Cannot match against 'undefined' or 'null'.</p>
+</blockquote>
+<p>We can prevent this issue by providing a default object to the function:</p>
+<pre><code class="js language-js">function createSundae({scoops = 1, toppings = ['Hot Fudge']} = {}) {
+  const scoopText = scoops === 1 ? 'scoop' : 'scoops';
+  return `Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`;
+}</code></pre>
+<p>By adding an empty object as the default parameter in case no arguments are provided, calling the function without any arguments now works.</p>
+<pre><code class="js language-js">createSundae(); // Your sundae has 1 scoop with Hot Fudge toppings.</code></pre>
+<blockquote>
+  <p><strong>Returns:</strong> Your sundae has 1 scoop with Hot Fudge toppings.</p>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Destructuring With Object Defaults Parameter</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>Take a look at the following code:</p>
+<pre><code class="js language-js">function houseDescriptor({houseColor = 'green', shutterColors = ['red']} = {}) {
+  return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+}</code></pre>
+<p>Which of the following choices will run without throwing an error?</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1485279245716" name="261167" id="a1485279245716">
+      <label for="a1485279245716"><p>houseDescriptor({houseColor: 'red', shutterColors: ['white', 'gray', 'pink']});</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485279263632" name="261167" id="a1485279263632">
+      <label for="a1485279263632"><p>houseDescriptor({houseColor: 'red'});</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485279264263" name="261167" id="a1485279264263">
+      <label for="a1485279264263"><p>houseDescriptor();</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485279264768" name="261167" id="a1485279264768">
+      <label for="a1485279264768"><p>houseDescriptor({shutterColors: ['orange', 'blue']});</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1485279265695" name="261167" id="a1485279265695">
+      <label for="a1485279265695"><p>houseDescriptor({});</p></label>
+    </div>
+  </form>
+
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="array-defaults-vs-object-defaults">Array defaults vs. object defaults</h2>
+<p>Default function parameters are a simple addition, but it makes our lives so much easier! One benefit of object defaults over array defaults is how they handle skipped options. Check this out:</p>
+<pre><code class="js language-js">function createSundae({scoops = 1, toppings = ['Hot Fudge']} = {}) { … }</code></pre>
+<p>…with the <code>createSundae()</code> function using object defaults with destructuring, if you want to use the default value for <code>scoops</code> but change the <code>toppings</code>, then all you need to do is pass in an object with <code>toppings</code>:</p>
+<pre><code class="js language-js">createSundae({toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']});</code></pre>
+<p>Compare the above example with the same function that uses array defaults with destructuring.</p>
+<pre><code class="js language-js">function createSundae([scoops = 1, toppings = ['Hot Fudge']] = []) { … }</code></pre>
+<p>With this function setup, if you want to use the default number of <code>scoops</code> but change the <code>toppings</code>, you'd have to call your function a little…oddly:</p>
+<pre><code class="js language-js">createSundae([undefined, ['Hot Fudge', 'Sprinkles', 'Caramel']]);</code></pre>
+<p>Since arrays are positionally based, we have to pass <code>undefined</code> to "skip" over the first argument (and accept the default) to get to the second argument.</p>
+<p>Unless you've got a strong reason to use array defaults with array destructuring, we recommend going with object defaults with object destructuring!</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>

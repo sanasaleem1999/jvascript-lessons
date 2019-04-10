@@ -1,0 +1,83 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.801 --> 00:00:03.670
+-Está pronto, Richard?
+-Quase. Espera aí!
+
+00:00:03.704 --> 00:00:06.573
+Como pode ver, esta parede
+está em péssimas condições.
+
+00:00:06.607 --> 00:00:08.475
+Richard vai pegar algo
+para ajeitá-la.
+
+00:00:08.509 --> 00:00:10.077
+Ainda estou procurando.
+
+00:00:10.110 --> 00:00:12.045
+Partes desta parede
+estão faltando
+
+00:00:12.079 --> 00:00:14.381
+e, quando o Richard achar
+o que está procurando,
+
+00:00:14.414 --> 00:00:15.649
+preencheremos os buracos
+
+00:00:15.682 --> 00:00:18.318
+para parecer que não há
+nada errado ou faltando.
+
+00:00:18.352 --> 00:00:19.853
+Achei!
+
+00:00:20.354 --> 00:00:23.156
+Nos Estados Unidos,
+chamamos isto de Spackling.
+
+00:00:23.190 --> 00:00:24.391
+É uma massa bem comum
+
+00:00:24.424 --> 00:00:27.961
+usada para preencher buracos,
+rachaduras ou defeitos nas paredes.
+
+00:00:28.028 --> 00:00:32.332
+No Reino Unido, uma marca
+conhecida disso é a Polyfilla.
+
+00:00:32.366 --> 00:00:34.301
+Se você usar
+Spackling ou Polyfilla,
+
+00:00:34.334 --> 00:00:37.671
+será impossível dizer
+que há um buraco na parede.
+
+00:00:37.704 --> 00:00:40.807
+Na web, um "polyfill"
+faz a mesma coisa
+
+00:00:40.841 --> 00:00:43.343
+quando faltam funcionalidades
+em um navegador
+
+00:00:43.377 --> 00:00:44.778
+que devem ser preenchidas.
+
+00:00:44.811 --> 00:00:46.914
+Um polyfill é um arquivo
+de JavaScript
+
+00:00:46.947 --> 00:00:49.650
+que preenche um buraco
+replicando atributos nativos
+
+00:00:49.683 --> 00:00:51.652
+para navegadores
+que não os possuem.
+

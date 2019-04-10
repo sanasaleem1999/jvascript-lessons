@@ -1,0 +1,11 @@
+<Application xmlns="http://ns.adobe.com/acrobat/app/2014" title="Edit PDF" id="EditPDFRdrAppFull" description="Edit text and images in PDF files" majorVersion="1" minorVersion="0" inAppUpsellEnabled="true">
+	<Commands>
+	</Commands>
+	<Layouts>
+		<Layout name="Default">
+			<ContentView>
+				<Component name="EditPDFView" type="Custom"/>
+			</ContentView>
+		</Layout>
+	</Layouts>
+</Application>

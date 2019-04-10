@@ -1,0 +1,266 @@
+<!-- udacimak v1.2.1 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Using Babel</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>Professional Developer-fu</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. The Web is Growing Up.html">01. The Web is Growing Up</a>
+    </li>
+    <li class="">
+      <a href="02. Old and New Browsers.html">02. Old and New Browsers</a>
+    </li>
+    <li class="">
+      <a href="03. ES6 Specification.html">03. ES6 Specification</a>
+    </li>
+    <li class="">
+      <a href="04. Supported Features.html">04. Supported Features</a>
+    </li>
+    <li class="">
+      <a href="05. The Web is Eternal.html">05. The Web is Eternal</a>
+    </li>
+    <li class="">
+      <a href="06. Polyfills.html">06. Polyfills</a>
+    </li>
+    <li class="">
+      <a href="07. Using Polyfills.html">07. Using Polyfills</a>
+    </li>
+    <li class="">
+      <a href="08. Polyfill Walkthrough.html">08. Polyfill Walkthrough</a>
+    </li>
+    <li class="">
+      <a href="09. Other Uses for Polyfills.html">09. Other Uses for Polyfills</a>
+    </li>
+    <li class="">
+      <a href="10. Transpiling.html">10. Transpiling</a>
+    </li>
+    <li class="">
+      <a href="11. Using Babel.html">11. Using Babel</a>
+    </li>
+    <li class="">
+      <a href="12. Transpiling Walkthrough.html">12. Transpiling Walkthrough</a>
+    </li>
+    <li class="">
+      <a href="13. Transpiling Recap.html">13. Transpiling Recap</a>
+    </li>
+    <li class="">
+      <a href="14. Course Summary.html">14. Course Summary</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">11. Using Babel</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>The most popular JavaScript transpiler is called <a href="https://babeljs.io/" target="_blank">Babel</a>.</p>
+<p>Babel's original name was slightly more descriptive - 6to5. This was because, originally, Babel converted ES6 code to ES5 code. Now, Babel does a lot more. It'll convert ES6 to ES5, JSX to JavaScript, and Flow to JavaScript.</p>
+<p>Before we look at transpiling code on our computer, let's do a quick test by transpiling some ES6 code into ES5 code directly on the Babel website. Check out <a href="http://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015" target="_blank">Babel's REPL</a> and paste the following code into the section on the left:</p>
+<pre><code class="js language-js">class Student {
+  constructor (name, major) {
+    this.name = name;
+    this.major = major;
+  }
+
+  displayInfo() {
+    console.log(`${this.name} is a ${this.major} student.`);
+  }
+}
+
+const richard = new Student('Richard', 'Music');
+const james = new Student('James', 'Electrical Engineering');</code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/babel-es6-to-es5.png" alt="ES6 code on the left that&#x27;s being transpiled to ES5 code on the right." class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>ES6 code on the left that's being transpiled to ES5 code on the right.</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="transpiling-project-in-repo">Transpiling project in repo</h2>
+<p>If you check in the <a href="https://github.com/udacity/course-es6/tree/master/lesson-4/walk-through-transpiling" target="_blank">repo for this project</a>, inside the Lesson 4 directory is a little project that's all set up for transpiling ES6 code to ES5 code. There's an "ES6" directory that contains the ES6 code we'll be transpiling (using Babel) to ES5 code that will be able to run in every browser.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/es6-code-in-project.png" alt="Code editor with ES6 code that will be transpiled." class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>Code editor with ES6 code that will be transpiled.</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>The way Babel transforms code from one language to another is through plugins. There are plugins that transform ES6 arrow functions to regular ES5 functions (the <a href="http://babeljs.io/docs/plugins/transform-es2015-arrow-functions/" target="_blank">ES2015 arrow function plugin</a>). There are plugins that transform ES6 template literals to regular string concatenation (the <a href="http://babeljs.io/docs/plugins/transform-es2015-template-literals/" target="_blank">ES2015 template literals transform</a>). For a full list, check out <a href="http://babeljs.io/docs/plugins/" target="_blank">all of Babel's plugins</a>.</p>
+<p>Now, you're busy and you don't want to have to sift through a big long list of plugins to see which ones you need to convert your code from ES6 to ES5. So instead of having to use a bunch of individual plugins, Babel has <strong>presets</strong> which are groups of plugins bundled together. So instead of worrying about which plugins you need to install, we'll just use the <a href="http://babeljs.io/docs/plugins/preset-es2015/" target="_blank">ES2015 preset</a> that is a collection of all the plugins we'll need to convert all of our ES6 code to ES5.</p>
+<p>You can see that the project has a <code>.babelrc</code> file. This is where you'd put all of the plugins and/or presets that the project will use. Since we want to convert all ES6 code, we've set it up so that it has the ES2015 preset.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/es6-preset-in-project.png" alt="Code editor with &#x60;.babelrc&#x60; file that has ES2015 preset listed." class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>Code editor with <code>.babelrc</code> file that has ES2015 preset listed.</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <blockquote>
+  <p><strong>WARNING:</strong> Babel uses both <a href="https://nodejs.org/" target="_blank">Node</a> and <a href="https://www.npmjs.com/" target="_blank">NPM</a> to distribute its plugins. So before you can install anything, make sure you have both of these tools installed:</p>
+  <ul>
+  <li>install <a href="https://nodejs.org/" target="_blank">Node</a> (which will automatically install NPM)</li>
+  </ul>
+</blockquote>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.2.1</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>
